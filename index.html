@@ -1,0 +1,1785 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no" />
+  <meta name="description" content="Pfizer " />
+  <meta name="author" content="Pfizer gençlik araştırması, Pfizer anket" />
+  <title>Pfizer | Anket</title>
+
+  <!-- Favicons-->
+  <link href="img/favicon_new.png" rel="icon" />
+
+  <!-- GOOGLE WEB FONT -->
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600" rel="stylesheet" />
+
+  <!-- BASE CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/menu.css" rel="stylesheet" />
+  <link href="css/style.css?v=2.3" rel="stylesheet" />
+  <link href="css/vendors.css" rel="stylesheet" />
+
+  <!-- YOUR CUSTOM CSS -->
+  <link href="css/custom.css?v=1.8" rel="stylesheet" />
+
+  <!-- MODERNIZR MENU -->
+  <script src="js/modernizr.js"></script>
+</head>
+
+<body>
+  
+  <div class="ocean">
+    <!-- <div class="wave"></div>
+    <div class="wave"></div> -->
+  </div>
+
+  <div class="pfizer-loader"></div>
+  <!-- <div id="preloader">
+		<div data-loader="circle-side"></div>
+	</div>/Preload -->
+
+  <div id="loader_form">
+    <div data-loader="circle-side-2"></div>
+  </div>
+  <!-- /loader_form -->
+
+  <!-- <nav>
+		<ul class="cd-primary-nav">
+			<li><a href="index.html" class="animated_link">Home</a></li>
+			<li><a href="quotation-wizard-version.html" class="animated_link">Quote Version</a></li>
+			<li><a href="review-wizard-version.html" class="animated_link">Review Version</a></li>
+			<li><a href="registration-wizard-version.html" class="animated_link">Registration Version</a></li>
+			<li><a href="about.html" class="animated_link">About Us</a></li>
+			<li><a href="contacts.html" class="animated_link">Contact Us</a></li>
+		</ul>
+	</nav> -->
+  <!-- /menu -->
+
+  <div class="container-fluid full-height">
+    <div class="row row-height">
+      <div class="col-lg-12 content-left" style="height: 100%;">
+        <div class="content-left-wrapper">
+          <a href="/" id="logo"><img src="img/pfizer-white-logo.png" alt="pfizer-logo" width="60%" /></a>
+          <div id="social">
+            <ul>
+              <li>
+                <a target="_blank" href="https://www.facebook.com/PfizerTurkiye/"><i class="icon-facebook"></i></a>
+              </li>
+              <li>
+                <a target="_blank" href="https://twitter.com/PfizerTurkiye"><i class="icon-twitter"></i></a>
+              </li>
+              <li>
+                <a target="_blank" href="https://www.linkedin.com/company/pfizer/"><i class="icon-linkedin"></i></a>
+              </li>
+            </ul>
+          </div>
+          <!-- /social -->
+          <div>
+            <!-- <figure>
+              <img style="max-width: 70% !important" src="img/info_graphic_1.svg" alt="" class="img-fluid" />
+            </figure> -->
+            <h2>Pfizer Gençlik Araştırması</h2>
+            <p>Gençlik İletişiminizi Şekillendiriyoruz</p>
+            <div class="form-group terms">
+              <label class="container_check" style="color: white;">Başlamadan önce
+                <a href="#" data-toggle="modal" data-target="#terms-txt" style="color: #92e3a9;">Gizlilik
+                  şartlarımızı</a> okuyup kabul
+                etmelisin.
+                <input type="checkbox" id="terms" name="terms" value="Yes" class="required" />
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <p id="checkTermsMessage" style="color: #e22727; font-weight:bold;display:none;">Gizlilik şartlarını kabul
+              etmelisiniz!</p>
+            <a class="btn_1 rounded btnStart">Hadi Başlayalım</a>
+            <a class="btn_1 rounded mobile_btn btnStart">Hadi başlayalım!</a>
+          </div>
+          <div class="copy">
+            © 2021 <span style="font-weight: bold">Badi</span>Works<span class="company-logo-detail"></span>
+          </div>
+        </div>
+        <!-- /content-left-wrapper -->
+      </div>
+      <!-- /content-left -->
+
+      <div class="col-lg-12 content-right" id="start" style="display: none;">
+        <div id="wizard_container">
+          <div id="top-wizard">
+            <div id="progressbar"></div>
+          </div>
+          <!-- /top-wizard -->
+          <form id="wrapped">
+
+            <div id="middle-wizard">
+
+              <!-- 1.Bölüm -->
+
+              <div class="step">
+                <h3 class="main_question">
+                  <strong style="font-weight: bold;color: #2387ab;">1. Bölüm: Sizi biraz tanıyalım</strong>
+                </h3>
+                <h3 class="main_question">
+                  <strong>1/2</strong>
+                </h3>
+                <div class="form-group">
+                  <div class="styled-select clearfix">
+                    <select class="wide required" name="question_1" onchange="getVals(this, 'question_1');">
+                      <option selected value="">Geçtiğiniz lisans derecesi..</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="Yüksek Lisans">Yüksek Lisans</option>
+                      <option value="Mezun">Mezun</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="styled-select clearfix">
+                    <select class="wide required" name="university" onchange="getVals(this, 'university');">
+                      <option selected value="">Üniversite seçiniz..</option>
+                      <option value="Abant İzzetBaysal Üniversitesi">Abant İzzetBaysal Üniversitesi</option>
+                      <option value="Abdullah Gül Üniversitesi">Abdullah Gül Üniversitesi</option>
+                      <option value="Acıbadem Üniversitesi">Acıbadem Üniversitesi</option>
+                      <option value="Adana Bilim ve Teknoloji Üniversitesi">Adana Bilim ve Teknoloji Üniversitesi
+                      </option>
+                      <option value="Adıyaman Üniversitesi">Adıyaman Üniversitesi</option>
+                      <option value="Adnan Menderes Üniversitesi">Adnan Menderes Üniversitesi</option>
+                      <option value="Afyon Kocatepe Üniversitesi">Afyon Kocatepe Üniversitesi</option>
+                      <option value="Afyonkarahisar Sağlık Bilimleri Üniversitesi">Afyonkarahisar Sağlık Bilimleri
+                        Üniversitesi</option>
+                      <option value="Ağrı İbrahim Çeçen Üniversitesi">Ağrı İbrahim Çeçen Üniversitesi</option>
+                      <option value="Ahi Evran Üniversitesi">Ahi Evran Üniversitesi</option>
+                      <option value="Akdeniz Karpaz Üniversitesi">Akdeniz Karpaz Üniversitesi</option>
+                      <option value="Akdeniz Üniversitesi">Akdeniz Üniversitesi</option>
+                      <option value="Akev Üniversitesi">Akev Üniversitesi</option>
+                      <option value="Aksaray Üniversitesi">Aksaray Üniversitesi</option>
+                      <option value="Alanya Alaaddin Keykubat Üniversitesi">Alanya Alaaddin Keykubat Üniversitesi
+                      </option>
+                      <option value="Alanya Hamdullah Emin Paşa Üniversitesi">Alanya Hamdullah Emin Paşa Üniversitesi
+                      </option>
+                      <option value="Amasya Üniversitesi">Amasya Üniversitesi</option>
+                      <option value="Anadolu Üniversitesi">Anadolu Üniversitesi</option>
+                      <option value="Anadolu Üniversitesi Kuzey Kıbrıs Kampüsü">Anadolu Üniversitesi Kuzey Kıbrıs
+                        Kampüsü</option>
+                      <option value="Anka Teknoloji Üniversitesi">Anka Teknoloji Üniversitesi</option>
+                      <option value="Anka Teknoloji Üniversitesi">Anka Teknoloji Üniversitesi</option>
+                      <option value="Ankara Hacı Bayram Veli Üniversitesi">Ankara Hacı Bayram Veli Üniversitesi</option>
+                      <option value="Ankara Medipol Üniversitesi">Ankara Medipol Üniversitesi</option>
+                      <option value="Ankara Sosyal Bilimler Üniversitesi">Ankara Sosyal Bilimler Üniversitesi</option>
+                      <option value="Ankara Üniversitesi">Ankara Üniversitesi</option>
+                      <option value="Ankara Yıldırım Beyazıt üniversitesi">Ankara Yıldırım Beyazıt üniversitesi</option>
+                      <option value="Antalya Bilim Üniversitesi">Antalya Bilim Üniversitesi</option>
+                      <option value="Ardahan Üniversitesi">Ardahan Üniversitesi</option>
+                      <option value="Artvin Çoruh Üniversitesi">Artvin Çoruh Üniversitesi</option>
+                      <option value="Ataşehir Adıgüzel Meslek Yüksekokulu">Ataşehir Adıgüzel Meslek Yüksekokulu</option>
+                      <option value="Atatürk Öğretmen Akademisi">Atatürk Öğretmen Akademisi</option>
+                      <option value="Atatürk Üniversitesi">Atatürk Üniversitesi</option>
+                      <option value="Atılım Üniversitesi">Atılım Üniversitesi</option>
+                      <option value="Avrasya Üniversitesi">Avrasya Üniversitesi</option>
+                      <option value="Avrupa Meslek Yüksekokulu">Avrupa Meslek Yüksekokulu</option>
+                      <option value="Almanya Bremen Üniversitesi">Almanya Bremen Üniversitesi</option>
+                      <option value="Bahçeşehir Üniversitesi">Bahçeşehir Üniversitesi</option>
+                      <option value="Balıkesir Üniversitesi">Balıkesir Üniversitesi</option>
+                      <option value="Bandırma Onyedi Eylül Üniversitesi">Bandırma Onyedi Eylül Üniversitesi</option>
+                      <option value="Bartın Üniversitesi">Bartın Üniversitesi</option>
+                      <option value="Başkent Üniversitesi">Başkent Üniversitesi</option>
+                      <option value="Batman Üniversitesi">Batman Üniversitesi</option>
+                      <option value="Bayburt Üniversitesi">Bayburt Üniversitesi</option>
+                      <option value="Beykent Üniversitesi">Beykent Üniversitesi</option>
+                      <option value="Beykoz Üniversitesi">Beykoz Üniversitesi</option>
+                      <option value="Bezmiâlem Vakıf Üniversitesi">Bezmiâlem Vakıf Üniversitesi</option>
+                      <option value="Bilecik Şeyh Edebali Üniversitesi">Bilecik Şeyh Edebali Üniversitesi</option>
+                      <option value="Bilkent Üniversitesi">Bilkent Üniversitesi</option>
+                      <option value="Bingöl Üniversitesi">Bingöl Üniversitesi</option>
+                      <option value="Biruni Üniversitesi">Biruni Üniversitesi</option>
+                      <option value="Bitlis Eren Üniversitesi">Bitlis Eren Üniversitesi</option>
+                      <option value="Boğaziçi Üniversitesi">Boğaziçi Üniversitesi</option>
+                      <option value="Bozok Üniversitesi">Bozok Üniversitesi</option>
+                      <option value="Bülent Ecevit Üniversitesi">Bülent Ecevit Üniversitesi</option>
+                      <option value="Bursa Orhangazi Üniversitesi">Bursa Orhangazi Üniversitesi</option>
+                      <option value="Bursa Teknik Üniversitesi">Bursa Teknik Üniversitesi</option>
+                      <option value="Çağ Üniversitesi">Çağ Üniversitesi</option>
+                      <option value="Çanakkale Onsekiz Mart Üniversitesi">Çanakkale Onsekiz Mart Üniversitesi</option>
+                      <option value="Canik Başarı Üniversitesi">Canik Başarı Üniversitesi</option>
+                      <option value="Çankaya Üniversitesi">Çankaya Üniversitesi</option>
+                      <option value="Çankırı Karatekin Üniversitesi">Çankırı Karatekin Üniversitesi</option>
+                      <option value="Celal Bayar Üniversitesi">Celal Bayar Üniversitesi</option>
+                      <option value="Çukurova Üniversitesi">Çukurova Üniversitesi</option>
+                      <option value="Cumhuriyet Üniversitesi">Cumhuriyet Üniversitesi</option>
+                      <option value="Deniz Harp Okulu">Deniz Harp Okulu</option>
+                      <option value="Dicle Üniversitesi">Dicle Üniversitesi</option>
+                      <option value="Doğu Akdeniz Üniversitesi">Doğu Akdeniz Üniversitesi</option>
+                      <option value="Doğuş Üniversitesi">Doğuş Üniversitesi</option>
+                      <option value="Dokuz Eylül Üniversitesi">Dokuz Eylül Üniversitesi</option>
+                      <option value="Dumlupınar Üniversitesi">Dumlupınar Üniversitesi</option>
+                      <option value="Düzce Üniversitesi">Düzce Üniversitesi</option>
+                      <option value="Ege Üniversitesi">Ege Üniversitesi</option>
+                      <option value="Erciyes Üniversitesi">Erciyes Üniversitesi</option>
+                      <option value="Erzincan Üniversitesi">Erzincan Üniversitesi</option>
+                      <option value="Erzurum Teknik Üniversitesi">Erzurum Teknik Üniversitesi</option>
+                      <option value="Eskişehir Osmangazi Üniversitesi">Eskişehir Osmangazi Üniversitesi</option>
+                      <option value="Eskişehir Teknik Üniversitesi">Eskişehir Teknik Üniversitesi</option>
+                      <option value="Fatih Sultan Mehmet Üniversitesi">Fatih Sultan Mehmet Üniversitesi</option>
+                      <option value="Fatih Üniversitesi">Fatih Üniversitesi</option>
+                      <option value="Fenerbahçe Üniversitesi">Fenerbahçe Üniversitesi</option>
+                      <option value="Fırat Üniversitesi">Fırat Üniversitesi</option>
+                      <option value="Galatasaray Üniversitesi">Galatasaray Üniversitesi</option>
+                      <option value="Gazi Üniversitesi">Gazi Üniversitesi</option>
+                      <option value="Gaziantep İslam Bilim ve Teknoloji Üniversitesi">Gaziantep İslam Bilim ve Teknoloji
+                        Üniversitesi</option>
+                      <option value="Gaziantep Üniversitesi">Gaziantep Üniversitesi</option>
+                      <option value="Gaziosmanpaşa Üniversitesi">Gaziosmanpaşa Üniversitesi</option>
+                      <option value="Gebze Teknik Üniversitesi">Gebze Teknik Üniversitesi</option>
+                      <option value="Gedik Üniversitesi">Gedik Üniversitesi</option>
+                      <option value="Gediz Üniversitesi">Gediz Üniversitesi</option>
+                      <option value="Giresun Üniversitesi">Giresun Üniversitesi</option>
+                      <option value="Girne Amerikan Üniversitesi">Girne Amerikan Üniversitesi</option>
+                      <option value="Girne Üniversitesi">Girne Üniversitesi</option>
+                      <option value="Gülhane Askeri Tıp Akademisi">Gülhane Askeri Tıp Akademisi</option>
+                      <option value="Gümüşhane Üniversitesi">Gümüşhane Üniversitesi</option>
+                      <option value="Hacettepe Üniversitesi">Hacettepe Üniversitesi</option>
+                      <option value="Hakkari Üniversitesi">Hakkari Üniversitesi</option>
+                      <option value="Haliç Üniversitesi">Haliç Üniversitesi</option>
+                      <option value="Harran Üniversitesi">Harran Üniversitesi</option>
+                      <option value="Hasan Kalyoncu Üniversitesi">Hasan Kalyoncu Üniversitesi</option>
+                      <option value="Hava Harp Okulu">Hava Harp Okulu</option>
+                      <option value="Hitit Üniversitesi">Hitit Üniversitesi</option>
+                      <option value="İbn-u Haldun Üniversitesi">İbn-u Haldun Üniversitesi</option>
+                      <option value="Iğdır Üniversitesi">Iğdır Üniversitesi</option>
+                      <option value="İnönü Üniversitesi">İnönü Üniversitesi</option>
+                      <option value="İpek Üniversitesi">İpek Üniversitesi</option>
+                      <option value="Işık Üniversitesi">Işık Üniversitesi</option>
+                      <option value="İskenderun Teknik Üniversitesi">İskenderun Teknik Üniversitesi</option>
+                      <option value="Isparta Uygulamalı Bilimler Üniversitesi">Isparta Uygulamalı Bilimler Üniversitesi
+                      </option>
+                      <option value="İstanbul 29 Mayıs Üniversitesi">İstanbul 29 Mayıs Üniversitesi</option>
+                      <option value="İstanbul Arel Üniversitesi">İstanbul Arel Üniversitesi</option>
+                      <option value="İstanbul Atlas Üniversitesi">İstanbul Atlas Üniversitesi</option>
+                      <option value="İstanbul Aydın Üniversitesi">İstanbul Aydın Üniversitesi</option>
+                      <option value="İstanbul Ayvansaray Üniversitesi">İstanbul Ayvansaray Üniversitesi</option>
+                      <option value="İstanbul Bilgi Üniversitesi">İstanbul Bilgi Üniversitesi</option>
+                      <option value="İstanbul Bilim Üniversitesi">İstanbul Bilim Üniversitesi</option>
+                      <option value="İstanbul Esenyurt Üniversitesi">İstanbul Esenyurt Üniversitesi</option>
+                      <option value="İstanbul Galata Üniversitesi">İstanbul Galata Üniversitesi</option>
+                      <option value="İstanbul Gelişim Üniversitesi">İstanbul Gelişim Üniversitesi</option>
+                      <option value="İstanbul Kavram Üniversitesi">İstanbul Kavram Üniversitesi</option>
+                      <option value="İstanbul Kemerburgaz Üniversitesi">İstanbul Kemerburgaz Üniversitesi</option>
+                      <option value="İstanbul Kültür Üniversitesi">İstanbul Kültür Üniversitesi</option>
+                      <option value="İstanbul Medeniyet Üniversitesi">İstanbul Medeniyet Üniversitesi</option>
+                      <option value="İstanbul Medipol Üniversitesi">İstanbul Medipol Üniversitesi</option>
+                      <option value="İstanbul Rumeli Üniversitesi">İstanbul Rumeli Üniversitesi</option>
+                      <option value="İstanbul Sabahattin Zaim Üniversitesi">İstanbul Sabahattin Zaim Üniversitesi
+                      </option>
+                      <option value="İstanbul Şehir Üniversitesi">İstanbul Şehir Üniversitesi</option>
+                      <option value="İstanbul Teknik Üniversitesi">İstanbul Teknik Üniversitesi</option>
+                      <option value="İstanbul Ticaret Üniversitesi">İstanbul Ticaret Üniversitesi</option>
+                      <option value="İstanbul Üniversitesi">İstanbul Üniversitesi</option>
+                      <option value="İstanbul Üniversitesi Cerrahpaşa">İstanbul Üniversitesi Cerrahpaşa</option>
+                      <option value="İstinye Üniversitesi">İstinye Üniversitesi</option>
+                      <option value="İzmir Bakırçay Üniversitesi">İzmir Bakırçay Üniversitesi</option>
+                      <option value="İzmir Ekonomi Üniversitesi">İzmir Ekonomi Üniversitesi</option>
+                      <option value="İzmir Kâtip Çelebi Üniversitesi">İzmir Kâtip Çelebi Üniversitesi</option>
+                      <option value="İzmir Kavram Meslek Yüksekokulu">İzmir Kavram Meslek Yüksekokulu</option>
+                      <option value="İzmir Tınaztepe Üniversitesi">İzmir Tınaztepe Üniversitesi</option>
+                      <option value="İzmir Demokrasi Üniversitesi">İzmir Demokrasi Üniversitesi</option>
+                      <option value="İzmir Yüksek Teknoloji Enstitüsü">İzmir Yüksek Teknoloji Enstitüsü</option>
+                      <option value="Kadir Has Üniversitesi">Kadir Has Üniversitesi</option>
+                      <option value="Kafkas Üniversitesi">Kafkas Üniversitesi</option>
+                      <option value="Kahramanmaraş İstiklal Üniversitesi">Kahramanmaraş İstiklal Üniversitesi</option>
+                      <option value="Kahramanmaraş Sütçü İmam Üniversitesi">Kahramanmaraş Sütçü İmam Üniversitesi
+                      </option>
+                      <option value="Kanuni Üniversitesi">Kanuni Üniversitesi</option>
+                      <option value="Kapadokya Meslek Yüksekokulu">Kapadokya Meslek Yüksekokulu</option>
+                      <option value="Kara Harp Okulu">Kara Harp Okulu</option>
+                      <option value="Karabük Üniversitesi">Karabük Üniversitesi</option>
+                      <option value="Karadeniz Teknik Üniversitesi">Karadeniz Teknik Üniversitesi</option>
+                      <option value="Karamanoğlu Mehmetbey Üniversitesi">Karamanoğlu Mehmetbey Üniversitesi</option>
+                      <option value="Karatay Üniversitesi">Karatay Üniversitesi</option>
+                      <option value="Kastamonu Üniversitesi">Kastamonu Üniversitesi</option>
+                      <option value="Kayseri Üniversitesi">Kayseri Üniversitesi</option>
+                      <option value="Kıbrıs Amerikan Üniversitesi">Kıbrıs Amerikan Üniversitesi</option>
+                      <option value="Kıbrıs İlim Üniversitesi">Kıbrıs İlim Üniversitesi</option>
+                      <option value="Kıbrıs Sağlık ve Toplum Bilimleri Üniversitesi    ">Kıbrıs Sağlık ve Toplum
+                        Bilimleri Üniversitesi </option>
+                      <option value="Kıbrıs Sosyal Bilimler Üniversitesi">Kıbrıs Sosyal Bilimler Üniversitesi</option>
+                      <option value="Kilis 7 Aralık Üniversitesi">Kilis 7 Aralık Üniversitesi</option>
+                      <option value="Kırıkkale Üniversitesi">Kırıkkale Üniversitesi</option>
+                      <option value="Kırklareli Üniversitesi">Kırklareli Üniversitesi</option>
+                      <option value="Koç Üniversitesi">Koç Üniversitesi</option>
+                      <option value="Kocaeli Üniversitesi">Kocaeli Üniversitesi</option>
+                      <option value="Konya Gıda Tarım Üniversitesi">Konya Gıda Tarım Üniversitesi</option>
+                      <option value="Konya Teknik Üniversitesi">Konya Teknik Üniversitesi</option>
+                      <option value="Kütahya Sağlık Bilimleri Üniversitesi">Kütahya Sağlık Bilimleri Üniversitesi
+                      </option>
+                      <option value="Lefke Avrupa Üniversitesi">Lefke Avrupa Üniversitesi</option>
+                      <option value="Lefkoşa İngiliz Üniversitesi">Lefkoşa İngiliz Üniversitesi</option>
+                      <option value="Lokman Hekim Üniversitesi">Lokman Hekim Üniversitesi</option>
+                      <option value="Malatya Turgut Özal Üniversitesi">Malatya Turgut Özal Üniversitesi</option>
+                      <option value="Maltepe Üniversitesi">Maltepe Üniversitesi</option>
+                      <option value="Mardin Artuklu Üniversitesi">Mardin Artuklu Üniversitesi</option>
+                      <option value="Marmara Üniversitesi">Marmara Üniversitesi</option>
+                      <option value="MEF Üniversitesi">MEF Üniversitesi</option>
+                      <option value="Mehmet Akif Ersoy Üniversitesi">Mehmet Akif Ersoy Üniversitesi</option>
+                      <option value="Melikşah Üniversitesi">Melikşah Üniversitesi</option>
+                      <option value="Mersin Üniversitesi">Mersin Üniversitesi</option>
+                      <option value="Mevlana Üniversitesi">Mevlana Üniversitesi</option>
+                      <option value="Milli Savunma Üniversitesi">Milli Savunma Üniversitesi</option>
+                      <option value="Mimar Sinan Güzel Sanatlar Üniversitesi">Mimar Sinan Güzel Sanatlar Üniversitesi
+                      </option>
+                      <option value="Muğla Sıtkı Koçman Üniversitesi">Muğla Sıtkı Koçman Üniversitesi</option>
+                      <option value="Murat Hüdavendigar Üniversitesi">Murat Hüdavendigar Üniversitesi</option>
+                      <option value="Muş Alparslan Üniversitesi">Muş Alparslan Üniversitesi</option>
+                      <option value="Mustafa Kemal Üniversitesi">Mustafa Kemal Üniversitesi</option>
+                      <option value="Namık Kemal Üniversitesi">Namık Kemal Üniversitesi</option>
+                      <option value="Necmettin Erbakan Üniversitesi">Necmettin Erbakan Üniversitesi</option>
+                      <option value="Nevşehir Hacı Bektaş Veli Üniversitesi">Nevşehir Hacı Bektaş Veli Üniversitesi
+                      </option>
+                      <option value="Niğde Üniversitesi">Niğde Üniversitesi</option>
+                      <option value="Nişantaşı Üniversitesi">Nişantaşı Üniversitesi</option>
+                      <option value="NuhNaci Yazgan Üniversitesi">NuhNaci Yazgan Üniversitesi</option>
+                      <option value="Okan Üniversitesi">Okan Üniversitesi</option>
+                      <option value="Ondokuz Mayıs Üniversitesi">Ondokuz Mayıs Üniversitesi</option>
+                      <option value="Ordu Üniversitesi">Ordu Üniversitesi</option>
+                      <option value="Orta Doğu Teknik Üniversitesi">Orta Doğu Teknik Üniversitesi</option>
+                      <option value="Osmaniye Korkut Ata Üniversitesi">Osmaniye Korkut Ata Üniversitesi</option>
+                      <option value="OSTİM Teknik Üniversitesi">OSTİM Teknik Üniversitesi</option>
+                      <option value="Özyeğin Üniversitesi">Özyeğin Üniversitesi</option>
+                      <option value="Pamukkale Üniversitesi">Pamukkale Üniversitesi</option>
+                      <option value="PiriReis Üniversitesi">PiriReis Üniversitesi</option>
+                      <option value="Plato Meslek YüksekOkulu">Plato Meslek YüksekOkulu</option>
+                      <option value="Polis Akademisi">Polis Akademisi</option>
+                      <option value="Politecnico di Torino">Politecnico di Torino</option>
+                      <option value="Recep Tayyip Erdoğan Üniversitesi">Recep Tayyip Erdoğan Üniversitesi</option>
+                      <option value="Sabancı Üniversitesi">Sabancı Üniversitesi</option>
+                      <option value="Sağlık Bilimleri Üniversitesi">Sağlık Bilimleri Üniversitesi</option>
+                      <option value="Sakarya Üniversitesi">Sakarya Üniversitesi</option>
+                      <option value="Sakarya Uygulamalı Bilimler Üniversitesi">Sakarya Uygulamalı Bilimler Üniversitesi
+                      </option>
+                      <option value="Samsun Üniversitesi">Samsun Üniversitesi</option>
+                      <option value="Sanko Üniversitesi">Sanko Üniversitesi</option>
+                      <option value="Selahattin Eyyubi Üniversitesi">Selahattin Eyyubi Üniversitesi</option>
+                      <option value="Selçuk Üniversitesi">Selçuk Üniversitesi</option>
+                      <option value="Şifa Üniversitesi">Şifa Üniversitesi</option>
+                      <option value="Siirt Üniversitesi">Siirt Üniversitesi</option>
+                      <option value="Sinop Üniversitesi">Sinop Üniversitesi</option>
+                      <option value="Sivas Bilim, Sanayi ve Teknoloji Üniversitesi">Sivas Bilim, Sanayi ve Teknoloji
+                        Üniversitesi</option>
+                      <option value="Şişli Meslek Yüksek Okulu">Şişli Meslek Yüksek Okulu</option>
+                      <option value="Şırnak Üniversitesi">Şırnak Üniversitesi</option>
+                      <option value="Süleyman Demirel Üniversitesi">Süleyman Demirel Üniversitesi</option>
+                      <option value="Süleyman Şah Üniversitesi">Süleyman Şah Üniversitesi</option>
+                      <option value="Tarsus Üniversitesi">Tarsus Üniversitesi</option>
+                      <option value="TED Üniversitesi">TED Üniversitesi</option>
+                      <option value="TOBB Ekonomi ve Teknoloji Üniversitesi">TOBB Ekonomi ve Teknoloji Üniversitesi
+                      </option>
+                      <option value="Toros Üniversitesi">Toros Üniversitesi</option>
+                      <option value="Trabzon Üniversitesi">Trabzon Üniversitesi</option>
+                      <option value="Trakya Üniversitesi">Trakya Üniversitesi</option>
+                      <option value="Tunceli Üniversitesi">Tunceli Üniversitesi</option>
+                      <option value="Turgut Özal Üniversitesi">Turgut Özal Üniversitesi</option>
+                      <option value="Türk Alman Üniversitesi">Türk Alman Üniversitesi</option>
+                      <option value="Türk Hava Kurumu Üniversitesi">Türk Hava Kurumu Üniversitesi</option>
+                      <option value="Türkiye Uluslararası İslam, Bilim ve Teknoloji Üniversitesi">Türkiye Uluslararası
+                        İslam, Bilim ve Teknoloji Üniversitesi</option>
+                      <option value="Ufuk Üniversitesi">Ufuk Üniversitesi</option>
+                      <option value="Uludağ Üniversitesi">Uludağ Üniversitesi</option>
+                      <option value="Uluslararası Antalya Üniversitesi">Uluslararası Antalya Üniversitesi</option>
+                      <option value="Uluslararası Final Üniversitesi">Uluslararası Final Üniversitesi</option>
+                      <option value="Uluslararası Kıbrıs Üniversitesi">Uluslararası Kıbrıs Üniversitesi</option>
+                      <option value="Uşak Üniversitesi">Uşak Üniversitesi</option>
+                      <option value="Üsküdar Üniversitesi">Üsküdar Üniversitesi</option>
+                      <option value="YakınDoğu Üniversitesi">YakınDoğu Üniversitesi</option>
+                      <option value="Yalova Üniversitesi">Yalova Üniversitesi</option>
+                      <option value="Yaşar Üniversitesi">Yaşar Üniversitesi</option>
+                      <option value="Yeditepe Üniversitesi">Yeditepe Üniversitesi</option>
+                      <option value="YeniYüzyıl Üniversitesi">YeniYüzyıl Üniversitesi</option>
+                      <option value="Yıldız Teknik Üniversitesi">Yıldız Teknik Üniversitesi</option>
+                      <option value="Yüksek İhtisas Üniversitesi">Yüksek İhtisas Üniversitesi</option>
+                      <option value="Yüzüncü Yıl Üniversitesi">Yüzüncü Yıl Üniversitesi</option>
+                      <option value="Zirve Üniversitesi">Zirve Üniversitesi</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <input type="text" name="department" class="form-control required" placeholder="Bölüm" />
+                </div>
+                <div class="form-group">
+                  <div class="styled-select clearfix">
+                    <select class="wide required" name="question_2" onchange="getVals(this, 'question_2');">
+                      <option selected value="">Yaşınızı seçiniz..</option>
+                      <option value="18-19">18-19</option>
+                      <option value="20-21">20-21</option>
+                      <option value="22-23">22-23</option>
+                      <option value="24-25">24-25</option>
+                      <option value="26 ve üzeri">26 ve üzeri</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="form-group radio_input">
+                        <label class="container_radio">Erkek
+                          <input checked type="radio" name="gender" value="Erkek" class="required" />
+                          <span class="checkmark"></span>
+                        </label>
+                        <label class="container_radio">Kadın
+                          <input type="radio" name="gender" value="Kadın" class="required" />
+                          <span class="checkmark"></span>
+                        </label>
+                        <label class="container_radio">Belirtmek istemiyorum
+                          <input type="radio" name="gender" value="Belirtmek istemiyorum" class="required" />
+                          <span class="checkmark"></span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="step">
+                <h3 class="main_question">
+                  <strong>2/2</strong>Öğrencilik dönemizde herhangi bir iş deneyiminiz oldu mu?
+                </h3>
+                <div class="form-group">
+                  <label class="container_check version_2">Staj
+                    <input type="checkbox" name="question_3" value="Staj" class="required"
+                      onchange="getVals(this, 'question_3');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_check version_2">Online Staj
+                    <input type="checkbox" name="question_3" value="Online Staj" class="required"
+                      onchange="getVals(this, 'question_3');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_check version_2">Gönüllü çalışma
+                    <input type="checkbox" name="question_3" value="Gönüllü çalışma" class="required"
+                      onchange="getVals(this, 'question_3');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_check version_2">İş deneyimim olmadı
+                    <input type="checkbox" name="question_3" value="İş deneyimim olmadı" class="required"
+                      onchange="getVals(this, 'question_3');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_check version_2">Part-time
+                    <input type="checkbox" name="question_3" value="Part-time" class="required"
+                      onchange="getVals(this, 'question_3');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_check version_2">Diğer
+                    <input id="question_other_22" type="checkbox" name="question_3" value="Diğer" class="required"
+                      onchange="getVals(this, 'question_3');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div id="step46inputArea" class="form-group" style="display: none;">
+                  <input type="text" id="step46input" name="step46input" class="form-control"
+                    placeholder="Diğer seçeneğinizi giriniz.." />
+                </div>
+
+                <h3 class="main_question">
+                  <strong></strong>İş veya Staj Arama durumunuz ?
+                </h3>
+                <div class="form-group">
+                  <label class="container_radio version_2">Aktif olarak iş arıyorum ve işe başlamaya hazırım
+                    <input type="radio" name="question_4" value="Aktif olarak iş arıyorum ve işe başlamaya hazırım"
+                      class="required" onchange="getVals(this, 'question_4');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Aktif olarak iş aramıyorum ama işe başlamaya hazırım
+                    <input type="radio" name="question_4" value="Aktif olarak iş aramıyorum ama işe başlamaya hazırım"
+                      class="required" onchange="getVals(this, 'question_4');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Aktif olarak iş aramıyorum ve henüz çalışmayı düşünmüyorum
+                    <input type="radio" name="question_4"
+                      value="Aktif olarak iş aramıyorum ve henüz çalışmayı düşünmüyorum" class="required"
+                      onchange="getVals(this, 'question_4');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Şu an iş veya staj aramıyorum
+                    <input type="radio" name="question_4" value="Şu an iş veya staj aramıyorum" class="required"
+                      onchange="getVals(this, 'question_4');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+
+              </div>
+
+              <!-- 2.Bölüm -->
+              <div class="step">
+                <h3 class="main_question">
+                  <strong style="font-weight: bold;color: #2387ab;">2. Bölüm: Öğrencilerin ve yeni mezunların iş
+                    dünyasına
+                    dair görüşleri</strong>
+                </h3>
+                <h3 class="main_question">
+                  <strong>1/8</strong>Şirketlerin sosyal mecralarda bulunan kariyer sayfaları, şirkete dair görüş
+                  oluşturmamda etkilidir.
+                </h3>
+                <div class="form-group">
+                  <label class="container_radio version_2">Hiç katılmıyorum
+                    <input type="radio" name="question_5" value="Hiç katılmıyorum" class="required"
+                      onchange="getVals(this, 'question_5');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Katılmıyorum
+                    <input type="radio" name="question_5" value="Katılmıyorum" class="required"
+                      onchange="getVals(this, 'question_5');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Emin değilim
+                    <input type="radio" name="question_5" value="Emin değilim" class="required"
+                      onchange="getVals(this, 'question_5');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Katılıyorum
+                    <input type="radio" name="question_5" value="Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_5');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+
+                <div class="form-group">
+                  <label class="container_radio version_2">Kesinlikle katılıyorum
+                    <input type="radio" name="question_5" value="Kesinlikle katılıyorum" class="required"
+                      onchange="getVals(this, 'question_5');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+
+                <h3 class="main_question">
+                  <strong></strong>Şirketlerin çeşitli dönemlerde düzenlediği Webinarları takip eder ve faydalı
+                  bulurum.
+                </h3>
+                <div class="form-group">
+                  <label class="container_radio version_2">Hiç katılmıyorum
+                    <input type="radio" name="question_6" value="Hiç katılmıyorum" class="required"
+                      onchange="getVals(this, 'question_6');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Katılmıyorum
+                    <input type="radio" name="question_6" value="Katılmıyorum" class="required"
+                      onchange="getVals(this, 'question_6');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Emin değilim
+                    <input type="radio" name="question_6" value="Emin değilim" class="required"
+                      onchange="getVals(this, 'question_6');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Katılıyorum
+                    <input type="radio" name="question_6" value="Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_6');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+
+                <div class="form-group">
+                  <label class="container_radio version_2">Kesinlikle katılıyorum
+                    <input type="radio" name="question_6" value="Kesinlikle katılıyorum" class="required"
+                      onchange="getVals(this, 'question_6');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+
+              </div>
+
+              <div class="step">
+                <h3 class="main_question">
+                  <strong>2/8</strong>Şirketler kesinlikle kampüs etkinliklerine katılmalı ve öğrencilerle fiziken de
+                  bir araya gelmelidir.
+                </h3>
+                <div class="form-group">
+                  <label class="container_radio version_2">Hiç katılmıyorum
+                    <input type="radio" name="question_7" value="Hiç katılmıyorum" class="required"
+                      onchange="getVals(this, 'question_7');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Katılmıyorum
+                    <input type="radio" name="question_7" value="Katılmıyorum" class="required"
+                      onchange="getVals(this, 'question_7');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Emin değilim
+                    <input type="radio" name="question_7" value="Emin değilim" class="required"
+                      onchange="getVals(this, 'question_7');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Katılıyorum
+                    <input type="radio" name="question_7" value="Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_7');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+
+                <div class="form-group">
+                  <label class="container_radio version_2">Kesinlikle katılıyorum
+                    <input type="radio" name="question_7" value="Kesinlikle katılıyorum" class="required"
+                      onchange="getVals(this, 'question_7');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+
+                <h3 class="main_question">
+                  <strong></strong>Okuduğum bölüme dair profesyonel yaşamda ihtiyacım olan
+                  yeteneklerin/yetkinliklerin neler olduğunun farkındayım.
+                </h3>
+                <div class="form-group">
+                  <label class="container_radio version_2">Hiç katılmıyorum
+                    <input type="radio" name="question_8" value="Hiç katılmıyorum" class="required"
+                      onchange="getVals(this, 'question_8');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Katılmıyorum
+                    <input type="radio" name="question_8" value="Katılmıyorum" class="required"
+                      onchange="getVals(this, 'question_8');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Emin değilim
+                    <input type="radio" name="question_8" value="Emin değilim" class="required"
+                      onchange="getVals(this, 'question_8');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Katılıyorum
+                    <input type="radio" name="question_8" value="Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_8');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+
+                <div class="form-group">
+                  <label class="container_radio version_2">Kesinlikle katılıyorum
+                    <input type="radio" name="question_8" value="Kesinlikle katılıyorum" class="required"
+                      onchange="getVals(this, 'question_8');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+
+              </div>
+
+              <div class="step">
+                <h3 class="main_question">
+                  <strong>3/8</strong>Sence profesyonel yaşamın beklediği bu yetkinlikler hangileridir ?
+                </h3>
+                <div class="form-group">
+                  <textarea rows="5" id="textarea515" name="textarea515" class="form-control" style="height:100px;"
+                    placeholder="Cevaplamak istemezseniz bu soruyu geçebilirsiniz.."></textarea>
+                </div>
+                <h3 class="main_question">
+                  <strong></strong>İşe başladığınız firmada 5 yıldan daha uzun süre çalışmanızı sağlayacak
+                  faktörler hangileri olurdu?
+                </h3>
+                <div class="form-group">
+                  <textarea required rows="5" id="textarea1215_2" name="textarea1215_2" class="form-control"
+                    style="height:100px;" placeholder="Cevabınızı giriniz.."></textarea>
+                </div>
+              </div>
+
+              <div class="step">
+                <h3 class="main_question">
+                  <strong>4/8</strong>Sizin görüşünüzce, itibarlı bir firma nasıl tanımlanır?
+                </h3>
+                <div class="form-group">
+                  <textarea required rows="5" id="textarea1215_3" name="textarea1215_3" class="form-control"
+                    style="height:100px;" placeholder="Cevabınızı giriniz.."></textarea>
+                </div>
+                <h3 class="main_question">
+                  <strong></strong>Bir üniversite öğrencisi olarak ilaç sektöründe çalışmayı tercih etme sebepleri
+                  sence nelerdir?
+                </h3>
+                <div class="form-group">
+                  <textarea required rows="5" id="textarea1215_4" name="textarea1215_4" class="form-control"
+                    style="height:100px;" placeholder="Cevabınızı giriniz.."></textarea>
+                </div>
+              </div>
+
+              <div class="step">
+                <h3 class="main_question">
+                  <strong>5/8</strong>Aşağıdaki sosyal medya ve kariyer platformlarını aktif olarak kullanmaktayım:
+                </h3>
+                <div class="form-group">
+                  <label class="container_check version_2">Instagram
+                    <input type="checkbox" name="question_social[]" value="Instagram" class="required"
+                      onchange="getVals(this, 'question_social');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_check version_2">Facebook
+                    <input type="checkbox" name="question_social[]" value="Facebook" class="required"
+                      onchange="getVals(this, 'question_social');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_check version_2">Youtube
+                    <input type="checkbox" name="question_social[]" value="Youtube" class="required"
+                      onchange="getVals(this, 'question_social');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_check version_2">Linkedin
+                    <input type="checkbox" name="question_social[]" value="Linkedin" class="required"
+                      onchange="getVals(this, 'question_social');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_check version_2">Twitter
+                    <input type="checkbox" name="question_social[]" value="Twitter" class="required"
+                      onchange="getVals(this, 'question_social');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_check version_2">TikTok
+                    <input type="checkbox" name="question_social[]" value="TikTok" class="required"
+                      onchange="getVals(this, 'question_social');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_check version_2">Öğrenci Kariyeri
+                    <input type="checkbox" name="question_social[]" value="Öğrenci Kariyeri" class="required"
+                      onchange="getVals(this, 'question_social');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_check version_2">Kariyer.net
+                    <input type="checkbox" name="question_social[]" value="Kariyer.net" class="required"
+                      onchange="getVals(this, 'question_social');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_check version_2">Diğer
+                    <input id="question_other_915" type="checkbox" name="question_social[]" value="Diğer"
+                      class="required" onchange="getVals(this, 'question_social');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div id="step915inputArea" class="form-group" style="display: none;">
+                  <input type="text" id="step915input" name="step915input" class="form-control"
+                    placeholder="Diğer seçeneğinizi giriniz.." />
+                </div>
+              </div>
+
+              <div class="step">
+                <h3 class="main_question">
+                  <strong>6/8</strong>Hangi şirket departmanında kariyer hedefimin olduğunu ve/veya hangi departmanları
+                  keşfedeceğimi fikren kesinleştirdim.
+                </h3>
+                <div class="form-group">
+                  <label class="container_radio version_2">Hiç katılmıyorum
+                    <input type="radio" name="question_9" value="Hiç katılmıyorum" class="required"
+                      onchange="getVals(this, 'question_9');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Katılmıyorum
+                    <input type="radio" name="question_9" value="Katılmıyorum" class="required"
+                      onchange="getVals(this, 'question_9');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Emin değilim
+                    <input type="radio" name="question_9" value="Emin değilim" class="required"
+                      onchange="getVals(this, 'question_9');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Katılıyorum
+                    <input type="radio" name="question_9" value="Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_9');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+
+                <div class="form-group">
+                  <label class="container_radio version_2">Kesinlikle katılıyorum
+                    <input type="radio" name="question_9" value="Kesinlikle katılıyorum" class="required"
+                      onchange="getVals(this, 'question_9');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+
+                <h3 class="main_question">
+                  <strong></strong>Bir şirketin üst düzey yöneticisine kıyasla maksimum 4 yıl tecrübesi olan bir
+                  çalışanın sunumunu dinlemek benim için daha dikkat çekicidir.
+                </h3>
+                <div class="form-group">
+                  <label class="container_radio version_2">Hiç katılmıyorum
+                    <input type="radio" name="question_10" value="Hiç katılmıyorum" class="required"
+                      onchange="getVals(this, 'question_10');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Katılmıyorum
+                    <input type="radio" name="question_10" value="Katılmıyorum" class="required"
+                      onchange="getVals(this, 'question_10');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Emin değilim
+                    <input type="radio" name="question_10" value="Emin değilim" class="required"
+                      onchange="getVals(this, 'question_10');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Katılıyorum
+                    <input type="radio" name="question_10" value="Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_10');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+
+                <div class="form-group">
+                  <label class="container_radio version_2">Kesinlikle katılıyorum
+                    <input type="radio" name="question_10" value="Kesinlikle katılıyorum" class="required"
+                      onchange="getVals(this, 'question_10');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+
+              </div>
+
+              <div class="step">
+                <h3 class="main_question">
+                  <strong>7/8</strong>Başvurulan bir pozisyon için gönderdiğim özgeçmişin çoğu zaman okunmadığını ve
+                  işe alım süreçlerinin fazlasıyla uzun olduğunu düşünüyorum
+                </h3>
+                <div class="form-group">
+                  <label class="container_radio version_2">Hiç katılmıyorum
+                    <input type="radio" name="question_11" value="Hiç katılmıyorum" class="required"
+                      onchange="getVals(this, 'question_11');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Katılmıyorum
+                    <input type="radio" name="question_11" value="Katılmıyorum" class="required"
+                      onchange="getVals(this, 'question_11');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Emin değilim
+                    <input type="radio" name="question_11" value="Emin değilim" class="required"
+                      onchange="getVals(this, 'question_11');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Katılıyorum
+                    <input type="radio" name="question_11" value="Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_11');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+
+                <div class="form-group">
+                  <label class="container_radio version_2">Kesinlikle katılıyorum
+                    <input type="radio" name="question_11" value="Kesinlikle katılıyorum" class="required"
+                      onchange="getVals(this, 'question_11');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+
+                <h3 class="main_question">
+                  <strong></strong>Başvurduğum şirketin uzaktan çalışma imkânını da sunması iş tercihim için önemli
+                  bir etkendir.
+                </h3>
+                <div class="form-group">
+                  <label class="container_radio version_2">Hiç katılmıyorum
+                    <input type="radio" name="question_12" value="Hiç katılmıyorum" class="required"
+                      onchange="getVals(this, 'question_12');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Katılmıyorum
+                    <input type="radio" name="question_12" value="Katılmıyorum" class="required"
+                      onchange="getVals(this, 'question_12');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Emin değilim
+                    <input type="radio" name="question_12" value="Emin değilim" class="required"
+                      onchange="getVals(this, 'question_12');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Katılıyorum
+                    <input type="radio" name="question_12" value="Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_12');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+
+                <div class="form-group">
+                  <label class="container_radio version_2">Kesinlikle katılıyorum
+                    <input type="radio" name="question_12" value="Kesinlikle katılıyorum" class="required"
+                      onchange="getVals(this, 'question_12');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+
+              </div>
+
+              <div class="step">
+                <h3 class="main_question">
+                  <strong>8/8</strong>Bir şirketin sana sunabileceklerini içeren aşağıdaki listeyi, kendi önem sırana
+                  en çok beklediğinden en az beklediğe göre nasıl sıralarsın ?
+                </h3>
+                <p>
+                  <span>
+                    *Sıralamak istediğiniz öğeyi sürükleyip bırakabilirsiniz
+                  </span>
+                </p>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-2 col-xs-2">
+                      <p class="sortable-number">1</p>
+                      <p class="sortable-number">2</p>
+                      <p class="sortable-number">3</p>
+                      <p class="sortable-number">4</p>
+                      <p class="sortable-number">5</p>
+                      <p class="sortable-number">6</p>
+                      <p class="sortable-number">7</p>
+                      <p class="sortable-number">8</p>
+                      <p class="sortable-number">9</p>
+                      <p class="sortable-number">10</p>
+                    </div>
+                    <div class="col-10 col-xs-10" style="padding:0px !important;">
+                      <ul class="sortable">
+                        <li><input checked disabled="disabled" type="checkbox" name="orderList" id="list1"><label
+                            data-icon="&#x31;" for="list1">Profesyonel eğitim ve gelişim</label></li>
+                        <li><input checked disabled="disabled" type="checkbox" name="orderList" id="list2"><label
+                            data-icon="&#x31;" for="list2">İyi bir maaş</label></li>
+                        <li><input checked disabled="disabled" type="checkbox" name="orderList" id="list3"><label
+                            data-icon="&#x31;" for="list3">Uluslararası çalışma ve seyahat fırsatları</label></li>
+                        <li><input checked disabled="disabled" type="checkbox" name="orderList" id="list4"><label
+                            data-icon="&#x31;" for="list4">Kariyer yolunun belirgin ve açık olması</label></li>
+                        <li><input checked disabled="disabled" type="checkbox" name="orderList" id="list5"><label
+                            data-icon="&#x31;" for="list5">Gelecek için sağlam bir referans</label></li>
+                        <li><input checked disabled="disabled" type="checkbox" name="orderList" id="list6"><label
+                            data-icon="&#x31;" for="list6">Prestij</label></li>
+                        <li><input checked disabled="disabled" type="checkbox" name="orderList" id="list7"><label
+                            data-icon="&#x31;" for="list7">Çalışana saygı</label></li>
+                        <li><input checked disabled="disabled" type="checkbox" name="orderList" id="list8"><label
+                            data-icon="&#x31;" for="list8">Gelişimimi destekleyecek liderler</label></li>
+                        <li><input checked disabled="disabled" type="checkbox" name="orderList" id="list9"><label
+                            data-icon="&#x31;" for="list9">İş güvencesi</label></li>
+                        <li><input checked disabled="disabled" type="checkbox" name="orderList" id="list10"><label
+                            data-icon="&#x31;" for="list10">Yaratıcı ve dinamik çalışma ortamı</label></li>
+                      </ul>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- 3.Bölüm -->
+              <div class="step">
+                <h3 class="main_question">
+                  <strong style="font-weight: bold;color: #2387ab;">3. Bölüm: Pfizer ve İşveren Markası</strong>
+                </h3>
+                <h3 class="main_question">
+                  <strong>1/10</strong>Türkiyede faaliyet gösteren aşağıdaki firmalarından hangilerini tanıyorsun ?
+                </h3>
+                <div class="form-group">
+                  <label class="container_check version_2">Pfizer
+                    <input type="checkbox" name="question_13[]" value="Pfizer" class="required"
+                      onchange="getVals(this, 'question_13');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_check version_2">AstraZeneca
+                    <input type="checkbox" name="question_13[]" value="AstraZeneca" class="required"
+                      onchange="getVals(this, 'question_13');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_check version_2">Sanofi
+                    <input type="checkbox" name="question_13[]" value="Sanofi" class="required"
+                      onchange="getVals(this, 'question_13');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_check version_2">Bayer
+                    <input type="checkbox" name="question_13[]" value="Bayer" class="required"
+                      onchange="getVals(this, 'question_13');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_check version_2">Abdi İbrahim
+                    <input type="checkbox" name="question_13[]" value="Abdi İbrahim" class="required"
+                      onchange="getVals(this, 'question_13');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_check version_2">Novartis
+                    <input type="checkbox" name="question_13[]" value="Novartis" class="required"
+                      onchange="getVals(this, 'question_13');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_check version_2">Johnson&Johnson
+                    <input type="checkbox" name="question_13[]" value="Johnson&Johnson" class="required"
+                      onchange="getVals(this, 'question_13');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_check version_2">GSK
+                    <input type="checkbox" name="question_13[]" value="GSK" class="required"
+                      onchange="getVals(this, 'question_13');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_check version_2">MSD
+                    <input type="checkbox" name="question_13[]" value="MSD" class="required"
+                      onchange="getVals(this, 'question_13');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_check version_2">Lilly
+                    <input type="checkbox" name="question_13[]" value="Lilly" class="required"
+                      onchange="getVals(this, 'question_13');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_check version_2">Diğer
+                    <input id="question_other_113" type="checkbox" name="question_13[]" value="Diğer" class="required"
+                      onchange="getVals(this, 'question_13');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div id="step113inputArea" class="form-group" style="display: none;">
+                  <input type="text" id="step113input" name="step113input" class="form-control"
+                    placeholder="Diğer seçeneğinizi giriniz.." />
+                </div>
+              </div>
+
+              <div class="step">
+                <h3 class="main_question">
+                  <strong>2/10</strong>İlaç endüstrisinde kariyer yapmak hakkında ne düşünüyorsunuz ?
+                </h3>
+                <div class="form-group">
+                  <label class="container_radio version_2">Bu sektör hakkında neredeyse hiçbir bilgim yok
+                    <input type="radio" name="question_14" value="Bu sektör hakkında neredeyse hiçbir bilgim yok"
+                      class="required" onchange="getVals(this, 'question_14');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">İlaç sektörü kesinlikle kariyer yapmak isteyeceğim bir alan
+                    değil
+                    <input type="radio" name="question_14"
+                      value="İlaç sektörü kesinlikle kariyer yapmak isteyeceğim bir alan değil" class="required"
+                      onchange="getVals(this, 'question_14');" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <div class="form-group">
+                    <div id="step213inputArea" class="form-group" style="display: none;">
+                      <input type="text" id="step213input" name="step213input" class="form-control"
+                        placeholder="Nedeninizi belirtir misiniz ?" />
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Sanmıyorum, bu sektöre karşı biraz çekingenim
+                    <input type="radio" name="question_14" value="Sanmıyorum, bu sektöre karşı biraz çekingenim"
+                      class="required" onchange="getVals(this, 'question_14');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Düşünebilirim, bu sektörde kariyer yapmak ilgi çekici
+                    olabilir
+                    <input type="radio" name="question_14"
+                      value="Düşünebilirim, bu sektörde kariyer yapmak ilgi çekici  olabilir" class="required"
+                      onchange="getVals(this, 'question_14');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+
+                <div class="form-group">
+                  <label class="container_radio version_2">Kesinlikle isterim
+                    <input type="radio" name="question_14" value="Kesinlikle isterim" class="required"
+                      onchange="getVals(this, 'question_14');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+
+              </div>
+
+              <div class="step">
+                <h3 class="main_question">
+                  <strong>3/10</strong>Pfizer Türkiye ve Pfizer Kariyer'i hangi mecralardan takip ediyorsun?
+                </h3>
+                <div class="form-group">
+                  <label class="container_check version_2">Instagram
+                    <input type="checkbox" name="question_15[]" value="Instagram" class="required"
+                      onchange="getVals(this, 'question_15');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_check version_2">Facebook
+                    <input type="checkbox" name="question_15[]" value="Facebook" class="required"
+                      onchange="getVals(this, 'question_15');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_check version_2">Youtube
+                    <input type="checkbox" name="question_15[]" value="Youtube" class="required"
+                      onchange="getVals(this, 'question_15');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_check version_2">Linkedin
+                    <input type="checkbox" name="question_15[]" value="Linkedin" class="required"
+                      onchange="getVals(this, 'question_15');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_check version_2">Öğrenci Kariyeri
+                    <input type="checkbox" name="question_15[]" value="Öğrenci Kariyeri" class="required"
+                      onchange="getVals(this, 'question_15');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_check version_2">Kariyer.net
+                    <input type="checkbox" name="question_15[]" value="Kariyer.net" class="required"
+                      onchange="getVals(this, 'question_15');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_check version_2">Web Sitesi
+                    <input type="checkbox" name="question_15[]" value="Web Sitesi" class="required"
+                      onchange="getVals(this, 'question_15');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_check version_2">Takip etmiyorum
+                    <input type="checkbox" name="question_15[]" value="Takip etmiyorum" class="required"
+                      onchange="getVals(this, 'question_15');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="step">
+                <h3 class="main_question">
+                  <strong>4/10</strong>Pfizer Türkiye'nin faaliyet alanları, iş ve staj imkanları hakkında yeterince
+                  bilgi sahibiyim.
+                </h3>
+                <div class="form-group">
+                  <label class="container_radio version_2">Hayır, hiç bilgi sahibi değilim
+                    <input type="radio" name="question_16" value="Hayır, hiç bilgi sahibi değilim" class="required"
+                      onchange="getVals(this, 'question_16');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Evet, biraz bilgi sahibiyim
+                    <input type="radio" name="question_16" value="Evet, biraz bilgi sahibiyim" class="required"
+                      onchange="getVals(this, 'question_16');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Evet, yeterince bilgi sahibiyim
+                    <input type="radio" name="question_16" value="Evet, yeterince bilgi sahibiyim" class="required"
+                      onchange="getVals(this, 'question_16');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <h3 class="main_question">
+                  <strong></strong>Daha önce Pfizer’e herhangi bir pozisyon için başvuru gerçekleştirdim.
+                </h3>
+                <div class="form-group">
+                  <label class="container_radio version_2">Evet, gerçekleştirdim
+                    <input type="radio" name="question_20" value="Evet, gerçekleştirdim" class="required"
+                      onchange="getVals(this, 'question_20');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Hayır, gerçekleştirmedim
+                    <input type="radio" name="question_20" value="Hayır, gerçekleştirmedim" class="required"
+                      onchange="getVals(this, 'question_20');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Diğer
+                    <input type="radio" name="question_20" value="Diğer" class="required"
+                      onchange="getVals(this, 'question_20');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div id="step613inputArea" class="form-group" style="display: none;">
+                  <input type="text" id="step613input" name="step613input" class="form-control"
+                    placeholder="Diğer seçeneğinizi giriniz.." />
+                </div>
+              </div>
+
+              <div class="step">
+                <h3 class="main_question">
+                  <strong>5/10</strong>Üniversite Kariyer Etkinliklerinde Pfizer'i deneyimleme şansın oldu mu?
+                </h3>
+                <div class="form-group">
+                  <label class="container_radio version_2">Evet
+                    <input checked type="radio" name="question_17" value="Evet" class="required"
+                      onchange="getVals(this, 'question_17');" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <div class="sub-radio" id="subQuestion_18">
+                    <label class="container_radio version_2">Sunum etkileyiciydi
+                      <input class="required" type="radio" name="question_18" value="Sunum etkileyiciydi"
+                        onchange="getVals(this, 'question_18');" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="container_radio version_2">Şirketi tanıma imkanım oldu
+                      <input class="required" type="radio" name="question_18" value="Şirketi tanıma imkanım oldu"
+                        onchange="getVals(this, 'question_18');" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="container_radio version_2">Sunum daha kaliteli olabilirdi
+                      <input class="required" type="radio" name="question_18" value="Sunum daha kaliteli olabilirdi"
+                        onchange="getVals(this, 'question_18');" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="container_radio version_2">Katıldım ama beğenmedim
+                      <input class="required" type="radio" name="question_18" value="Katıldım ama beğenmedim"
+                        onchange="getVals(this, 'question_18');" />
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Hayır
+                    <input type="radio" name="question_17" value="Hayır" class="required"
+                      onchange="getVals(this, 'question_17');" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <div class="sub-radio" id="subQuestion_19" style="display: none;">
+                    <label class="container_radio version_2">Hiç denk gelmedim
+                      <input type="radio" name="question_19" value="Hiç denk gelmedim"
+                        onchange="getVals(this, 'question_19');" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="container_radio version_2">Zamanım uyuşmadığı için katılamadım
+                      <input type="radio" name="question_19" value="Zamanım uyuşmadığı için katılamadım"
+                        onchange="getVals(this, 'question_19');" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="container_radio version_2">Denk geldim ama ilgimi çekmediği için katılmadım
+                      <input type="radio" name="question_19" value="Denk geldim ama ilgimi çekmediği için katılmadım"
+                        onchange="getVals(this, 'question_19');" />
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="step">
+                <h3 class="main_question">
+                  <strong>6/10</strong>Pfizer’in işe alım politikaları hakkında neler düşünüyorsunuz?
+                </h3>
+                <div class="form-group">
+                  <label class="container_check version_2">Oldukça uzun ve art arda sıralı birçok etaptan oluşmaktadır
+                    <input type="checkbox" name="question_21[]"
+                      value="Oldukça uzun ve art arda sıralı birçok etaptan oluşmaktadır" class="required"
+                      onchange="getVals(this, 'question_21');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_check version_2">Sadece en iyi öğrencileri istedikleri için fazlasıyla zorlu
+                    birtakım süreçlerden oluşmaktadır
+                    <input type="checkbox" name="question_21[]"
+                      value="Sadece en iyi öğrencileri istedikleri için fazlasıyla zorlu birtakım süreçlerden oluşmaktadır"
+                      class="required" onchange="getVals(this, 'question_21');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_check version_2">Neredeyse hiçbir bilgim yok
+                    <input type="checkbox" name="question_21[]" value="Neredeyse hiçbir bilgim yok" class="required"
+                      onchange="getVals(this, 'question_21');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_check version_2">Adayların en çok özgeçmiş kısmında elendiğini, başvurular
+                    arasında sıyrılmayacağımı ve başvuranların çoğuna bir şans verilmediğini düşünüyorum
+                    <input type="checkbox" name="question_21[]"
+                      value="Adayların en çok özgeçmiş kısmında elendiğini, başvurular arasında sıyrılmayacağımı ve başvuranların çoğuna bir şans verilmediğini düşünüyorum"
+                      class="required" onchange="getVals(this, 'question_21');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_check version_2">Güçlü bir referans gerektiğini, referans olmadan işe
+                    alınmayacağımı düşünüyorum
+                    <input type="checkbox" name="question_21[]"
+                      value="Güçlü bir referans gerektiğini, referans olmadan işe alınmayacağımı düşünüyorum"
+                      class="required" onchange="getVals(this, 'question_21');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_check version_2">Pfizer’in hangi yetkinliklere önem verdiğinden emin değilim
+                    <input type="checkbox" name="question_21[]"
+                      value="Pfizer’in hangi yetkinliklere önem verdiğinden emin değilim" class="required"
+                      onchange="getVals(this, 'question_21');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="step">
+                <h3 class="main_question">
+                  <strong>7/10</strong>İlaç sektöründeki kariyer hedefimde Pfizer kesinlikle ilk tercihlerimden biri
+                  olurdu.
+                </h3>
+                <div class="form-group">
+                  <label class="container_radio version_2">Evet
+                    <input checked type="radio" name="question_22" value="Evet" class="required"
+                      onchange="getVals(this, 'question_22');" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <div class="sub-radio" id="subQuestion_24">
+                    <label class="container_check version_2">Pfizer’in oldukça itibarlı bir firma olduğunu düşünüyorum
+                      <input class="required" type="checkbox" name="question_24[]"
+                        value="Pfizer’in oldukça itibarlı bir firma olduğunu düşünüyorum"
+                        onchange="getVals(this, 'question_24');" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="container_check version_2">Pfizer’de kolaylıkla uluslararası kariyer yapabileceğimi
+                      düşünüyorum
+                      <input class="required" type="checkbox" name="question_24[]"
+                        value="Pfizer’de kolaylıkla uluslararası kariyer yapabileceğimi düşünüyorum"
+                        onchange="getVals(this, 'question_24');" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="container_check version_2">Pfizer’in çalışanlarıyla fazlasıyla ilgilendiğini ve
+                      çalışanlarına değer verdiğini düşünüyorum
+                      <input class="required" type="checkbox" name="question_24[]"
+                        value="Pfizer’in çalışanlarıyla fazlasıyla ilgilendiğini ve çalışanlarına değer verdiğini düşünüyorum"
+                        onchange="getVals(this, 'question_24');" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="container_check version_2">İlaç endüstrisinde çalışmanın bana içsel bir motivasyon
+                      kazandıracağını düşünüyorum
+                      <input class="required" type="checkbox" name="question_24[]"
+                        value="İlaç endüstrisinde çalışmanın bana içsel bir motivasyon kazandıracağını düşünüyorum"
+                        onchange="getVals(this, 'question_24');" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="container_check version_2">Pfizer’de oldukça renkli, rahat ve esnek bir çalışma ortamı
+                      olduğunu düşünüyorum
+                      <input class="required" type="checkbox" name="question_24[]"
+                        value="Pfizer’de oldukça renkli, rahat ve esnek bir çalışma ortamı olduğunu düşünüyorum"
+                        onchange="getVals(this, 'question_24');" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="container_check version_2">Pfizer’de oldukça ciddi, disiplinli ve hiyerarşik bir
+                      çalışma ortamı olduğunu düşünüyorum
+                      <input class="required" type="checkbox" name="question_24[]"
+                        value="Pfizer’de oldukça ciddi, disiplinli ve hiyerarşik bir çalışma ortamı olduğunu düşünüyorum"
+                        onchange="getVals(this, 'question_24');" />
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Hayır
+                    <input type="radio" name="question_22" value="Hayır" class="required"
+                      onchange="getVals(this, 'question_22');" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <div class="sub-radio" id="subQuestion_25" style="display: none;">
+                    <label class="container_check version_2">Pfizer'in yeterince itibarlı bir firma olduğunu
+                      düşünmüyorum
+                      <input type="checkbox" name="question_25[]"
+                        value="Pfizer'in yeterince itibarlı bir firma olduğunu düşünmüyorum"
+                        onchange="getVals(this, 'question_25');" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="container_check version_2">Pfizer'de kariyer fırsatlarının kısıtlı olduğunu
+                      düşünüyorum
+                      <input type="checkbox" name="question_25[]"
+                        value="Pfizer'de kariyer fırsatlarının kısıtlı olduğunu düşünüyorum"
+                        onchange="getVals(this, 'question_25');" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="container_check version_2">Pfizer'in çalışanlarına verdiği değerin, rakiplerine
+                      kıyasla daha az olduğunu düşünüyorum
+                      <input type="checkbox" name="question_25[]"
+                        value="Pfizer'in çalışanlarına verdiği değerin, rakiplerine kıyasla daha az olduğunu düşünüyorum"
+                        onchange="getVals(this, 'question_25');" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="container_check version_2">Pfizer yerine ilaç endsütriside başka bir firma ile
+                      çalışmayı tercih ederim
+                      <input type="checkbox" name="question_25[]"
+                        value="Pfizer yerine ilaç endsütriside başka bir firma ile çalışmayı tercih ederim"
+                        onchange="getVals(this, 'question_25');" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="container_check version_2">Pfizer’de oldukça renkli, rahat ve esnek bir çalışma ortamı
+                      olduğunu düşünüyorum
+                      <input type="checkbox" name="question_25[]"
+                        value="Pfizer’de oldukça renkli, rahat ve esnek bir çalışma ortamı olduğunu düşünüyorum"
+                        onchange="getVals(this, 'question_25');" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="container_check version_2">Pfizer’de oldukça ciddi, disiplinli ve hiyerarşik bir
+                      çalışma ortamı olduğunu düşünüyorum
+                      <input type="checkbox" name="question_25[]"
+                        value="Pfizer’de oldukça ciddi, disiplinli ve hiyerarşik bir çalışma ortamı olduğunu düşünüyorum"
+                        onchange="getVals(this, 'question_25');" />
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="step">
+                <h3 class="main_question">
+                  <strong>8/10</strong>İlaç sektöründeki kariyer hedefiniz için Pfizer dışında aşağıdaki firmalardan
+                  hangisini seçerdiniz ?
+                </h3>
+                <div class="form-group">
+                  <label class="container_check version_2">AstraZeneca
+                    <input type="checkbox" name="question_26[]" value="AstraZeneca" class="required"
+                      onchange="getVals(this, 'question_26');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_check version_2">Sanofi
+                    <input type="checkbox" name="question_26[]" value="Sanofi" class="required"
+                      onchange="getVals(this, 'question_26');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_check version_2">Bayer
+                    <input type="checkbox" name="question_26[]" value="Bayer" class="required"
+                      onchange="getVals(this, 'question_26');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_check version_2">Abdi İbrahim
+                    <input type="checkbox" name="question_26[]" value="Abdi İbrahim" class="required"
+                      onchange="getVals(this, 'question_26');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_check version_2">Novartis
+                    <input type="checkbox" name="question_26[]" value="Novartis" class="required"
+                      onchange="getVals(this, 'question_26');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_check version_2">Johnson&Johnson
+                    <input type="checkbox" name="question_26[]" value="Johnson&Johnson" class="required"
+                      onchange="getVals(this, 'question_26');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_check version_2">GSK
+                    <input type="checkbox" name="question_26[]" value="GSK" class="required"
+                      onchange="getVals(this, 'question_26');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_check version_2">MSD
+                    <input type="checkbox" name="question_26[]" value="MSD" class="required"
+                      onchange="getVals(this, 'question_26');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_check version_2">Lilly
+                    <input type="checkbox" name="question_26[]" value="Lilly" class="required"
+                      onchange="getVals(this, 'question_26');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="step">
+                <h3 class="main_question">
+                  <strong>9/10</strong>Pfizer Türkiye'nin çalışma ortamı ve iş kültürü hakkında ne düşünüyorsun?
+                </h3>
+                <div class="form-group">
+                  <textarea required rows="5" id="textarea1013_1" name="textarea1013_1" class="form-control"
+                    style="height:100px;" placeholder="Bir cevap yazınız.."></textarea>
+                </div>
+                <h3 class="main_question">
+                  <strong></strong>Bir üniversite öğrencisi olarak insanlar sence Pfizer’de çalışmayla ilgili ne
+                  düşünüyordur?
+                </h3>
+                <div class="form-group">
+                  <textarea required rows="5" id="textarea1013_2" name="textarea1013_2" class="form-control"
+                    style="height:100px;" placeholder="Bir cevap yazınız.."></textarea>
+                </div>
+              </div>
+
+              <div class="step">
+                <h3 class="main_question">
+                  <strong>10/10</strong>Bir üniversite öğrencisi olarak insanlar sence Pfizer çalışanlarıyla ilgili ne
+                  düşünüyordur?
+                </h3>
+                <div class="form-group">
+                  <textarea required rows="5" id="textarea1013_3" name="textarea1013_3" class="form-control"
+                    style="height:100px;" placeholder="Bir cevap yazınız.."></textarea>
+                </div>
+                <h3 class="main_question">
+                  <strong></strong>Bir üniversite öğrencisi olarak Pfizer’de kariyerine adım atmanın, gelecekte
+                  sana ne gibi faydalar sağlayacağını düşünüyorsun?
+                </h3>
+                <div class="form-group">
+                  <textarea required rows="5" id="textarea1013_4" name="textarea1013_4" class="form-control"
+                    style="height:100px;" placeholder="Bir cevap yazınız.."></textarea>
+                </div>
+              </div>
+
+              <div class="submit step">
+                <h3 class="main_question"><strong></strong>Ankete dair görüşleriniz</h3>
+                <div class="form-group rating_wp clearfix">
+                  <label class="rating_type">Genel memnuniyet</label>
+                  <span class="rating">
+                    <input type="radio" class="required rating-input" id="rating-input-1-5" name="rating_input_1"
+                      value="5" onchange="getVals(this, 'rating_input_1');">
+                    <label for="rating-input-1-5" class="rating-star"></label>
+                    <input type="radio" class="required rating-input" id="rating-input-1-4" name="rating_input_1"
+                      value="4" onchange="getVals(this, 'rating_input_1');">
+                    <label for="rating-input-1-4" class="rating-star"></label>
+                    <input type="radio" class="required rating-input" id="rating-input-1-3" name="rating_input_1"
+                      value="3" onchange="getVals(this, 'rating_input_1');">
+                    <label for="rating-input-1-3" class="rating-star"></label>
+                    <input type="radio" class="required rating-input" id="rating-input-1-2" name="rating_input_1"
+                      value="2" onchange="getVals(this, 'rating_input_1');">
+                    <label for="rating-input-1-2" class="rating-star"></label>
+                    <input type="radio" class="required rating-input" id="rating-input-1-1" name="rating_input_1"
+                      value="1" onchange="getVals(this, 'rating_input_1');">
+                    <label for="rating-input-1-1" class="rating-star"></label>
+                  </span>
+                </div>
+                <div class="form-group rating_wp clearfix">
+                  <label class="rating_type">Kullanım kolaylığı</label>
+                  <span class="rating">
+                    <input type="radio" class="required rating-input" id="rating-input-2-5" name="rating_input_2"
+                      value="5" onchange="getVals(this, 'rating_input_2');">
+                    <label for="rating-input-2-5" class="rating-star"></label>
+                    <input type="radio" class="required rating-input" id="rating-input-2-4" name="rating_input_2"
+                      value="4" onchange="getVals(this, 'rating_input_2');">
+                    <label for="rating-input-2-4" class="rating-star"></label>
+                    <input type="radio" class="required rating-input" id="rating-input-2-3" name="rating_input_2"
+                      value="3" onchange="getVals(this, 'rating_input_2');">
+                    <label for="rating-input-2-3" class="rating-star"></label>
+                    <input type="radio" class="required rating-input" id="rating-input-2-2" name="rating_input_2"
+                      value="2" onchange="getVals(this, 'rating_input_2');">
+                    <label for="rating-input-2-2" class="rating-star"></label>
+                    <input type="radio" class="required rating-input" id="rating-input-2-1" name="rating_input_2"
+                      value="1" onchange="getVals(this, 'rating_input_2');">
+                    <label for="rating-input-2-1" class="rating-star"></label>
+                  </span>
+                </div>
+                <div class="form-group rating_wp clearfix">
+                  <label class="rating_type">Akıcılık</label>
+                  <span class="rating">
+                    <input type="radio" class="required rating-input" id="rating-input-3-5" name="rating_input_3"
+                      value="5" onchange="getVals(this, 'rating_input_3');">
+                    <label for="rating-input-3-5" class="rating-star"></label>
+                    <input type="radio" class="required rating-input" id="rating-input-3-4" name="rating_input_3"
+                      value="4" onchange="getVals(this, 'rating_input_3');">
+                    <label for="rating-input-3-4" class="rating-star"></label>
+                    <input type="radio" class="required rating-input" id="rating-input-3-3" name="rating_input_3"
+                      value="3" onchange="getVals(this, 'rating_input_3');">
+                    <label for="rating-input-3-3" class="rating-star"></label>
+                    <input type="radio" class="required rating-input" id="rating-input-3-2" name="rating_input_3"
+                      value="2" onchange="getVals(this, 'rating_input_3');">
+                    <label for="rating-input-3-2" class="rating-star"></label>
+                    <input type="radio" class="required rating-input" id="rating-input-3-1" name="rating_input_3"
+                      value="1" onchange="getVals(this, 'rating_input_3');">
+                    <label for="rating-input-3-1" class="rating-star"></label>
+                  </span>
+                </div>
+              </div>
+              <!-- /step-->
+            </div>
+            <!-- /middle-wizard -->
+            <div id="bottom-wizard">
+              <button type="button" name="backward" class="backward">
+                Geri
+              </button>
+              <button type="button" name="forward" class="forward">
+                İleri
+              </button>
+              <button type="submit" name="process" class="submit">
+                Gönder
+              </button>
+            </div>
+            <!-- /bottom-wizard -->
+          </form>
+        </div>
+        <!-- /Wizard container -->
+      </div>
+      <!-- /content-right-->
+    </div>
+    <!-- /row-->
+  </div>
+  <!-- /container-fluid -->
+
+  <div class="cd-overlay-nav">
+    <span></span>
+  </div>
+  <!-- /cd-overlay-nav -->
+
+  <div class="cd-overlay-content">
+    <span></span>
+  </div>
+  <!-- /cd-overlay-content -->
+
+  <!-- <a href="#0" class="cd-nav-trigger">Menu<span class="cd-icon"></span></a> -->
+  <!-- /menu button -->
+
+  <!-- Modal terms -->
+  <div class="modal fade" id="terms-txt" tabindex="-1" role="dialog" aria-labelledby="termsLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="termsLabel">Gizlilik Sözleşmesi</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+            &times;
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>
+            Değerli katılımcımız, Kişisel Verilerin Korunması Kanunu kapsamında sizleri bilgilendirmek istiyoruz.
+            Badiworks olarak kişisel verilerinizin güvenliği hususuna azami hassasiyet göstermekte olduğumuzu bilmenizi
+            isteriz. Bu sorumluluğumuzun tam idraki ile
+            KVK Kanunu'nda tanımlı şekli ile "Veri Sorumlusu" sıfatıyla, kişisel verilerinizi aşağıda izah edildiği
+            surette ve mevzuat tarafından emredilen sınırlar çerçevesinde işlemekteyiz.
+          </p>
+          <p>
+            6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVKK") uyarınca kimliğinizi belirli veya belirlenebilir
+            kılan her türlü bilginiz ve özel nitelikli kişisel verileriniz dâhil kişisel verileriniz, veri sorumlusu
+            olarak Pfizer tarafından işlenebilecektir.
+          </p>
+          <p>
+            Pfizer 6698 sayılı Kişisel Verilerin Korunması Kanununda yer alan düzenlemelere uygun olarak kişisel veri
+            işleme faaliyetlerini yürütmektedir.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn_1" data-dismiss="modal">
+            Kapat
+          </button>
+        </div>
+      </div>
+      <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+  </div>
+  <!-- /.modal -->
+
+  <!-- COMMON SCRIPTS -->
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/sweetalert.min.js"></script>
+  <script src="js/common_scripts.js?v=1.6"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js'></script>
+  <script src="js/jquery.ui.touch-punch.js"></script>
+  <script src="js/velocity.min.js"></script>
+  <script src="js/velocity.min.js"></script>
+  <!-- <script src="js/anime.min.js"></script> -->
+  <script src="js/functions.js?v=1.7"></script>
+  <!-- Wizard script -->
+  <script src="js/survey_func.js?v=1.7"></script>
+</body>
+
+</html>
