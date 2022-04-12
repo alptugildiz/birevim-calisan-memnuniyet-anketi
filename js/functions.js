@@ -28,14 +28,14 @@
 			$("#subQuestion_18").fadeIn(300);
 			$("#subQuestion_19").fadeOut();
 			$('input[type=radio][name=question_18]').addClass("required");
-			$('input[type=radio][name=question_19]').removeClass("required");
+			// $('input[type=radio][name=question_19]').removeClass("required");
 			$('input:radio[name=question_19]').each(function () { $(this).prop('checked', false); });
 			x = true;
 		} else {
 			$("#subQuestion_19").fadeIn(300);
 			$("#subQuestion_18").fadeOut();
 			$('input[type=radio][name=question_19]').addClass("required");
-			$('input[type=radio][name=question_18]').removeClass("required");
+			// $('input[type=radio][name=question_18]').removeClass("required");
 			$('input:radio[name=question_18]').each(function () { $(this).prop('checked', false); });
 			x = false;
 		}
@@ -47,14 +47,14 @@
 			$("#subQuestion_24").fadeIn(300);
 			$("#subQuestion_25").fadeOut();
 			$('input[name^="question_24"]').addClass("required");
-			$('input[name^="question_25"]').removeClass("required");
+			// $('input[name^="question_25"]').removeClass("required");
 			$('input[name^="question_25"]').each(function () { $(this).prop('checked', false); });
 			y = true;
 		} else {
 			$("#subQuestion_25").fadeIn(300);
 			$("#subQuestion_24").fadeOut();
 			$('input[name^="question_25"]').addClass("required");
-			$('input[name^="question_24"]').removeClass("required");
+			// $('input[name^="question_24"]').removeClass("required");
 			$('input[name^="question_24"]').each(function () { $(this).prop('checked', false); });
 			y = false;
 		}

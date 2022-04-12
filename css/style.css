@@ -1437,7 +1437,7 @@ span.error:after {
 /* Checkbox style */
 
 .container_check {
-  display: block;
+  /* display: block; */
   position: relative;
   font-size: 14px;
   font-size: 0.875rem;
@@ -2061,7 +2061,7 @@ input[type=file]::-webkit-file-upload-button:focus, input[type=file].invalid::-w
   width: 100%;
   height: 100%;
   z-index: 9997;
-  background: url('../img/pfizer-loader.gif') 50% 50% no-repeat;
+  background: url('../img/birevim-main-logo.png') 50% 50% no-repeat;
   background-color: #EEEEEE;
 }
 
@@ -2194,4 +2194,27 @@ body {
   50% {
     transform: translate3d(0, 5px, 0);
   }
+}
+
+/* alptuğ 12.04.2022 loader logo*/
+
+@keyframes fancy-spin {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.9);
+  }
+  70% {
+    transform: scale(1.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.spinner {
+  animation: fancy-spin 1000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }

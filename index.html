@@ -5,12 +5,12 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no" />
-  <meta name="description" content="Pfizer " />
-  <meta name="author" content="Pfizer gençlik araştırması, Pfizer anket" />
-  <title>Pfizer | Anket</title>
+  <meta name="description" content="Birevim " />
+  <meta name="author" content="Birevim Çalışan Memnuniyet Anketi, Birevim anket" />
+  <title>Birevim | Anket</title>
 
   <!-- Favicons-->
-  <link href="img/favicon_new.png" rel="icon" />
+  <link href="img/birevim-title.png" rel="icon" />
 
   <!-- GOOGLE WEB FONT -->
   <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600" rel="stylesheet" />
@@ -35,7 +35,7 @@
     <div class="wave"></div> -->
   </div>
 
-  <div class="pfizer-loader"></div>
+  <div class="spinner pfizer-loader"></div>
   <!-- <div id="preloader">
 		<div data-loader="circle-side"></div>
 	</div>/Preload -->
@@ -61,17 +61,17 @@
     <div class="row row-height">
       <div class="col-lg-12 content-left" style="height: 100%;">
         <div class="content-left-wrapper">
-          <a href="/" id="logo"><img src="img/pfizer-white-logo.png" alt="pfizer-logo" width="60%" /></a>
+          <a href="/" id="logo"><img src="img/birevim-main-white.png" alt="pfizer-logo" width="60%" /></a>
           <div id="social">
             <ul>
               <li>
-                <a target="_blank" href="https://www.facebook.com/PfizerTurkiye/"><i class="icon-facebook"></i></a>
+                <a target="_blank" href="https://www.facebook.com/Birevim/"><i class="icon-facebook"></i></a>
               </li>
               <li>
-                <a target="_blank" href="https://twitter.com/PfizerTurkiye"><i class="icon-twitter"></i></a>
+                <a target="_blank" href="https://twitter.com/birevim"><i class="icon-twitter"></i></a>
               </li>
               <li>
-                <a target="_blank" href="https://www.linkedin.com/company/pfizer/"><i class="icon-linkedin"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/company/birevim/"><i class="icon-linkedin"></i></a>
               </li>
             </ul>
           </div>
@@ -80,7 +80,7 @@
             <!-- <figure>
               <img style="max-width: 70% !important" src="img/info_graphic_1.svg" alt="" class="img-fluid" />
             </figure> -->
-            <h2>Pfizer Gençlik Araştırması</h2>
+            <h2>Birevim Çalışan emnuniyet Anketi</h2>
             <p>Gençlik İletişiminizi Şekillendiriyoruz</p>
             <div class="form-group terms">
               <label class="container_check" style="color: white;">Başlamadan önce
@@ -121,19 +121,19 @@
                   <strong style="font-weight: bold;color: #2387ab;">1. Bölüm: Sizi biraz tanıyalım</strong>
                 </h3>
                 <h3 class="main_question">
-                  <strong>1/2</strong>
+                  <strong>1/3</strong>
                 </h3>
                 <div class="form-group">
                   <div class="styled-select clearfix">
                     <select class="wide required" name="question_1" onchange="getVals(this, 'question_1');">
-                      <option selected value="">Geçtiğiniz lisans derecesi..</option>
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4">4</option>
+                      <option selected value="">Çalıştığı Yer</option>
+                      <option value="Genel Müdürlük">Genel Müdürlük</option>
+                      <option value="2">Şube</option>
+                      <option value="3">Belirtmek İstemiyorum</option>
+                      <!-- <option value="4">4</option>
                       <option value="5">5</option>
                       <option value="Yüksek Lisans">Yüksek Lisans</option>
-                      <option value="Mezun">Mezun</option>
+                      <option value="Mezun">Mezun</option> -->
                     </select>
                   </div>
                 </div>
@@ -404,22 +404,34 @@
                     </select>
                   </div>
                 </div>
-                <div class="form-group">
+                <!-- <div class="form-group">
                   <input type="text" name="department" class="form-control required" placeholder="Bölüm" />
-                </div>
+                </div> -->
                 <div class="form-group">
                   <div class="styled-select clearfix">
                     <select class="wide required" name="question_2" onchange="getVals(this, 'question_2');">
-                      <option selected value="">Yaşınızı seçiniz..</option>
-                      <option value="18-19">18-19</option>
-                      <option value="20-21">20-21</option>
-                      <option value="22-23">22-23</option>
-                      <option value="24-25">24-25</option>
-                      <option value="26 ve üzeri">26 ve üzeri</option>
+                      <option selected value="">Unvan</option>
+                      <option value="Görevli, Müşteri Danışmanı, Uzman Yardımcısı, Uzman, Kıdemli Uzman">Görevli, Müşteri Danışmanı, Uzman Yardımcısı, Uzman, Kıdemli Uzman</option>
+                      <option value="Yönetmen – Müdür – Direktör – Genel Müdür Yardımcısı">Yönetmen – Müdür – Direktör – Genel Müdür Yardımcısı</option>
+                      <option value="Belirtmek istemiyorum.">Belirtmek istemiyorum.</option>
                     </select>
                   </div>
                 </div>
+
                 <div class="form-group">
+                  <div class="styled-select clearfix">
+                    <select class="wide required" name="question_3" onchange="getVals(this, 'question_3');">
+                      <option selected value="">Çalışma süresi</option>
+                      <option value="0-6 ay">0-6 ay</option>
+                      <option value="6-12 ay">6-12 ay</option>
+                      <option value="12-24 ay">12-24 ay</option>
+                      <option value="24-36 ay">24-36 ay</option>
+                      <option value="36 ay üzeri">36 ay üzeri</option>
+                    </select>
+                  </div>
+                </div>
+
+                <!-- <div class="form-group">
                   <div class="row">
                     <div class="col-12">
                       <div class="form-group radio_input">
@@ -438,14 +450,57 @@
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> -->
               </div>
 
               <div class="step">
                 <h3 class="main_question">
-                  <strong>2/2</strong>Öğrencilik dönemizde herhangi bir iş deneyiminiz oldu mu?
+                  <strong>1/31</strong>İş arkadaşlarım işbirliğine açıktır.
                 </h3>
                 <div class="form-group">
+                  <label class="container_radio version_2">Kesinlikle Katılıyorum
+                    <input type="radio" name="question_4" value="Kesinlikle Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_4');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Oldukça Katılıyorum
+                    <input type="radio" name="question_4" value="Oldukça Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_4');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Katılıyorum
+                    <input type="radio" name="question_4" value="Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_4');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Pek Katılmıyorum
+                    <input type="radio" name="question_4" value="Pek Katılmıyorum" class="required"
+                      onchange="getVals(this, 'question_4');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+
+                <div class="form-group">
+                  <label class="container_radio version_2">Kesinlikle Katılmıyorum
+                    <input type="radio" name="question_4" value="Kesinlikle Katılmıyorum" class="required"
+                      onchange="getVals(this, 'question_4');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Fikir Belirtmek İstemiyorum
+                    <input type="radio" name="question_4" value="Fikir Belirtmek İstemiyorum" class="required"
+                      onchange="getVals(this, 'question_4');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <!-- <div class="form-group">
                   <label class="container_check version_2">Staj
                     <input type="checkbox" name="question_3" value="Staj" class="required"
                       onchange="getVals(this, 'question_3');" />
@@ -490,12 +545,55 @@
                 <div id="step46inputArea" class="form-group" style="display: none;">
                   <input type="text" id="step46input" name="step46input" class="form-control"
                     placeholder="Diğer seçeneğinizi giriniz.." />
-                </div>
+                </div> -->
 
                 <h3 class="main_question">
-                  <strong></strong>İş veya Staj Arama durumunuz ?
+                  <strong>2/31</strong>İş arkadaşlarım duygu ve düşüncelerime saygı duyar.
                 </h3>
                 <div class="form-group">
+                  <label class="container_radio version_2">Kesinlikle Katılıyorum
+                    <input type="radio" name="question_5" value="Kesinlikle Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_5');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Oldukça Katılıyorum
+                    <input type="radio" name="question_5" value="Oldukça Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_5');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Katılıyorum
+                    <input type="radio" name="question_5" value="Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_5');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Pek Katılmıyorum
+                    <input type="radio" name="question_5" value="Pek Katılmıyorum" class="required"
+                      onchange="getVals(this, 'question_5');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+
+                <div class="form-group">
+                  <label class="container_radio version_2">Kesinlikle Katılmıyorum
+                    <input type="radio" name="question_5" value="Kesinlikle Katılmıyorum" class="required"
+                      onchange="getVals(this, 'question_5');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Fikir Belirtmek İstemiyorum
+                    <input type="radio" name="question_5" value="Fikir Belirtmek İstemiyorum" class="required"
+                      onchange="getVals(this, 'question_5');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <!-- <div class="form-group">
                   <label class="container_radio version_2">Aktif olarak iş arıyorum ve işe başlamaya hazırım
                     <input type="radio" name="question_4" value="Aktif olarak iş arıyorum ve işe başlamaya hazırım"
                       class="required" onchange="getVals(this, 'question_4');" />
@@ -523,22 +621,64 @@
                       onchange="getVals(this, 'question_4');" />
                     <span class="checkmark"></span>
                   </label>
-                </div>
+                </div> -->
 
               </div>
 
               <!-- 2.Bölüm -->
               <div class="step">
-                <h3 class="main_question">
+                <!-- <h3 class="main_question">
                   <strong style="font-weight: bold;color: #2387ab;">2. Bölüm: Öğrencilerin ve yeni mezunların iş
                     dünyasına
                     dair görüşleri</strong>
-                </h3>
+                </h3> -->
                 <h3 class="main_question">
-                  <strong>1/8</strong>Şirketlerin sosyal mecralarda bulunan kariyer sayfaları, şirkete dair görüş
-                  oluşturmamda etkilidir.
+                  <strong>3/31</strong>İş arkadaşlarım iş ile ilgili bilgi birikimlerini ve tecrübelerini birbirleriyle ve benimle paylaşır.
                 </h3>
                 <div class="form-group">
+                  <label class="container_radio version_2">Kesinlikle Katılıyorum
+                    <input type="radio" name="question_6" value="Kesinlikle Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_6');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Oldukça Katılıyorum
+                    <input type="radio" name="question_6" value="Oldukça Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_6');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Katılıyorum
+                    <input type="radio" name="question_6" value="Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_6');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Pek Katılmıyorum
+                    <input type="radio" name="question_6" value="Pek Katılmıyorum" class="required"
+                      onchange="getVals(this, 'question_6');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+
+                <div class="form-group">
+                  <label class="container_radio version_2">Kesinlikle Katılmıyorum
+                    <input type="radio" name="question_6" value="Kesinlikle Katılmıyorum" class="required"
+                      onchange="getVals(this, 'question_6');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Fikir Belirtmek İstemiyorum
+                    <input type="radio" name="question_6" value="Fikir Belirtmek İstemiyorum" class="required"
+                      onchange="getVals(this, 'question_6');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <!-- <div class="form-group">
                   <label class="container_radio version_2">Hiç katılmıyorum
                     <input type="radio" name="question_5" value="Hiç katılmıyorum" class="required"
                       onchange="getVals(this, 'question_5');" />
@@ -573,13 +713,55 @@
                       onchange="getVals(this, 'question_5');" />
                     <span class="checkmark"></span>
                   </label>
-                </div>
+                </div> -->
 
                 <h3 class="main_question">
-                  <strong></strong>Şirketlerin çeşitli dönemlerde düzenlediği Webinarları takip eder ve faydalı
-                  bulurum.
+                  <strong>4/31</strong>İşimi yaparken ihtiyaç duyduğum her türlü malzeme, araç-gereç ve donanıma rahatlıkla ulaşabiliyorum.
                 </h3>
                 <div class="form-group">
+                  <label class="container_radio version_2">Kesinlikle Katılıyorum
+                    <input type="radio" name="question_7" value="Kesinlikle Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_7');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Oldukça Katılıyorum
+                    <input type="radio" name="question_7" value="Oldukça Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_7');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Katılıyorum
+                    <input type="radio" name="question_7" value="Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_7');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Pek Katılmıyorum
+                    <input type="radio" name="question_7" value="Pek Katılmıyorum" class="required"
+                      onchange="getVals(this, 'question_7');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+
+                <div class="form-group">
+                  <label class="container_radio version_2">Kesinlikle Katılmıyorum
+                    <input type="radio" name="question_7" value="Kesinlikle Katılmıyorum" class="required"
+                      onchange="getVals(this, 'question_7');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Fikir Belirtmek İstemiyorum
+                    <input type="radio" name="question_7" value="Fikir Belirtmek İstemiyorum" class="required"
+                      onchange="getVals(this, 'question_7');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <!-- <div class="form-group">
                   <label class="container_radio version_2">Hiç katılmıyorum
                     <input type="radio" name="question_6" value="Hiç katılmıyorum" class="required"
                       onchange="getVals(this, 'question_6');" />
@@ -614,16 +796,59 @@
                       onchange="getVals(this, 'question_6');" />
                     <span class="checkmark"></span>
                   </label>
-                </div>
+                </div> -->
 
               </div>
 
               <div class="step">
                 <h3 class="main_question">
-                  <strong>2/8</strong>Şirketler kesinlikle kampüs etkinliklerine katılmalı ve öğrencilerle fiziken de
-                  bir araya gelmelidir.
+                  <strong>5/31</strong>İş yerim fiziksel olarak çalışmama elverişli ve güvenli bir yerdir.
                 </h3>
                 <div class="form-group">
+                  <label class="container_radio version_2">Kesinlikle Katılıyorum
+                    <input type="radio" name="question_8" value="Kesinlikle Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_8');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Oldukça Katılıyorum
+                    <input type="radio" name="question_8" value="Oldukça Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_8');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Katılıyorum
+                    <input type="radio" name="question_8" value="Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_8');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Pek Katılmıyorum
+                    <input type="radio" name="question_8" value="Pek Katılmıyorum" class="required"
+                      onchange="getVals(this, 'question_8');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+
+                <div class="form-group">
+                  <label class="container_radio version_2">Kesinlikle Katılmıyorum
+                    <input type="radio" name="question_8" value="Kesinlikle Katılmıyorum" class="required"
+                      onchange="getVals(this, 'question_8');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Fikir Belirtmek İstemiyorum
+                    <input type="radio" name="question_8" value="Fikir Belirtmek İstemiyorum" class="required"
+                      onchange="getVals(this, 'question_8');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+
+                <!-- <div class="form-group">
                   <label class="container_radio version_2">Hiç katılmıyorum
                     <input type="radio" name="question_7" value="Hiç katılmıyorum" class="required"
                       onchange="getVals(this, 'question_7');" />
@@ -658,13 +883,55 @@
                       onchange="getVals(this, 'question_7');" />
                     <span class="checkmark"></span>
                   </label>
-                </div>
+                </div> -->
 
                 <h3 class="main_question">
-                  <strong></strong>Okuduğum bölüme dair profesyonel yaşamda ihtiyacım olan
-                  yeteneklerin/yetkinliklerin neler olduğunun farkındayım.
+                  <strong>6/31</strong>	Duygusal ve psikolojik olarak sağlıklı bir iş ortamım vardır.
                 </h3>
                 <div class="form-group">
+                  <label class="container_radio version_2">Kesinlikle Katılıyorum
+                    <input type="radio" name="question_9" value="Kesinlikle Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_9');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Oldukça Katılıyorum
+                    <input type="radio" name="question_9" value="Oldukça Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_9');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Katılıyorum
+                    <input type="radio" name="question_9" value="Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_9');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Pek Katılmıyorum
+                    <input type="radio" name="question_9" value="Pek Katılmıyorum" class="required"
+                      onchange="getVals(this, 'question_9');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+
+                <div class="form-group">
+                  <label class="container_radio version_2">Kesinlikle Katılmıyorum
+                    <input type="radio" name="question_9" value="Kesinlikle Katılmıyorum" class="required"
+                      onchange="getVals(this, 'question_9');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Fikir Belirtmek İstemiyorum
+                    <input type="radio" name="question_9" value="Fikir Belirtmek İstemiyorum" class="required"
+                      onchange="getVals(this, 'question_9');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <!-- <div class="form-group">
                   <label class="container_radio version_2">Hiç katılmıyorum
                     <input type="radio" name="question_8" value="Hiç katılmıyorum" class="required"
                       onchange="getVals(this, 'question_8');" />
@@ -699,15 +966,58 @@
                       onchange="getVals(this, 'question_8');" />
                     <span class="checkmark"></span>
                   </label>
-                </div>
+                </div> -->
 
               </div>
 
               <div class="step">
                 <h3 class="main_question">
-                  <strong>3/8</strong>Sence profesyonel yaşamın beklediği bu yetkinlikler hangileridir ?
+                  <strong>7/31</strong>Yaptığım işin Birevim’in iş sonuçlarına ne şekilde katkı sağladığını biliyorum.
                 </h3>
                 <div class="form-group">
+                  <label class="container_radio version_2">Kesinlikle Katılıyorum
+                    <input type="radio" name="question_10" value="Kesinlikle Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_10');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Oldukça Katılıyorum
+                    <input type="radio" name="question_10" value="Oldukça Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_10');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Katılıyorum
+                    <input type="radio" name="question_10" value="Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_10');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Pek Katılmıyorum
+                    <input type="radio" name="question_10" value="Pek Katılmıyorum" class="required"
+                      onchange="getVals(this, 'question_10');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+
+                <div class="form-group">
+                  <label class="container_radio version_2">Kesinlikle Katılmıyorum
+                    <input type="radio" name="question_10" value="Kesinlikle Katılmıyorum" class="required"
+                      onchange="getVals(this, 'question_10');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Fikir Belirtmek İstemiyorum
+                    <input type="radio" name="question_10" value="Fikir Belirtmek İstemiyorum" class="required"
+                      onchange="getVals(this, 'question_10');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <!-- <div class="form-group">
                   <textarea rows="5" id="textarea515" name="textarea515" class="form-control" style="height:100px;"
                     placeholder="Cevaplamak istemezseniz bu soruyu geçebilirsiniz.."></textarea>
                 </div>
@@ -718,13 +1028,57 @@
                 <div class="form-group">
                   <textarea required rows="5" id="textarea1215_2" name="textarea1215_2" class="form-control"
                     style="height:100px;" placeholder="Cevabınızı giriniz.."></textarea>
+                </div> -->
+                <h3 class="main_question">
+                  <strong>8/31</strong>Kendimi çalışırken mutlu ve huzurlu hissediyorum.
+                </h3>
+                <div class="form-group">
+                  <label class="container_radio version_2">Kesinlikle Katılıyorum
+                    <input type="radio" name="question_11" value="Kesinlikle Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_11');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Oldukça Katılıyorum
+                    <input type="radio" name="question_11" value="Oldukça Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_11');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Katılıyorum
+                    <input type="radio" name="question_11" value="Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_11');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Pek Katılmıyorum
+                    <input type="radio" name="question_11" value="Pek Katılmıyorum" class="required"
+                      onchange="getVals(this, 'question_11');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+
+                <div class="form-group">
+                  <label class="container_radio version_2">Kesinlikle Katılmıyorum
+                    <input type="radio" name="question_11" value="Kesinlikle Katılmıyorum" class="required"
+                      onchange="getVals(this, 'question_11');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Fikir Belirtmek İstemiyorum
+                    <input type="radio" name="question_11" value="Fikir Belirtmek İstemiyorum" class="required"
+                      onchange="getVals(this, 'question_11');" />
+                    <span class="checkmark"></span>
+                  </label>
                 </div>
               </div>
 
-              <div class="step">
-                <h3 class="main_question">
-                  <strong>4/8</strong>Sizin görüşünüzce, itibarlı bir firma nasıl tanımlanır?
-                </h3>
+              <!-- <div class="step">
+                
                 <div class="form-group">
                   <textarea required rows="5" id="textarea1215_3" name="textarea1215_3" class="form-control"
                     style="height:100px;" placeholder="Cevabınızı giriniz.."></textarea>
@@ -737,13 +1091,56 @@
                   <textarea required rows="5" id="textarea1215_4" name="textarea1215_4" class="form-control"
                     style="height:100px;" placeholder="Cevabınızı giriniz.."></textarea>
                 </div>
-              </div>
+              </div> -->
 
               <div class="step">
                 <h3 class="main_question">
-                  <strong>5/8</strong>Aşağıdaki sosyal medya ve kariyer platformlarını aktif olarak kullanmaktayım:
+                  <strong>9/31</strong>Yaptığım iş, benim beceri ve deneyimlerime uygundur.
                 </h3>
                 <div class="form-group">
+                  <label class="container_radio version_2">Kesinlikle Katılıyorum
+                    <input type="radio" name="question_12" value="Kesinlikle Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_12');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Oldukça Katılıyorum
+                    <input type="radio" name="question_12" value="Oldukça Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_12');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Katılıyorum
+                    <input type="radio" name="question_12" value="Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_12');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Pek Katılmıyorum
+                    <input type="radio" name="question_12" value="Pek Katılmıyorum" class="required"
+                      onchange="getVals(this, 'question_12');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+
+                <div class="form-group">
+                  <label class="container_radio version_2">Kesinlikle Katılmıyorum
+                    <input type="radio" name="question_12" value="Kesinlikle Katılmıyorum" class="required"
+                      onchange="getVals(this, 'question_12');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Fikir Belirtmek İstemiyorum
+                    <input type="radio" name="question_12" value="Fikir Belirtmek İstemiyorum" class="required"
+                      onchange="getVals(this, 'question_12');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <!-- <div class="form-group">
                   <label class="container_check version_2">Instagram
                     <input type="checkbox" name="question_social[]" value="Instagram" class="required"
                       onchange="getVals(this, 'question_social');" />
@@ -809,15 +1206,54 @@
                 <div id="step915inputArea" class="form-group" style="display: none;">
                   <input type="text" id="step915input" name="step915input" class="form-control"
                     placeholder="Diğer seçeneğinizi giriniz.." />
-                </div>
-              </div>
-
-              <div class="step">
+                </div> -->
                 <h3 class="main_question">
-                  <strong>6/8</strong>Hangi şirket departmanında kariyer hedefimin olduğunu ve/veya hangi departmanları
-                  keşfedeceğimi fikren kesinleştirdim.
+                  <strong>10/31</strong>Birevim’de çalışmayı başkasına tavsiye ederim.
                 </h3>
                 <div class="form-group">
+                  <label class="container_radio version_2">Kesinlikle Katılıyorum
+                    <input type="radio" name="question_13" value="Kesinlikle Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_13');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Oldukça Katılıyorum
+                    <input type="radio" name="question_13" value="Oldukça Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_13');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Katılıyorum
+                    <input type="radio" name="question_13" value="Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_13');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Pek Katılmıyorum
+                    <input type="radio" name="question_13" value="Pek Katılmıyorum" class="required"
+                      onchange="getVals(this, 'question_13');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+
+                <div class="form-group">
+                  <label class="container_radio version_2">Kesinlikle Katılmıyorum
+                    <input type="radio" name="question_13" value="Kesinlikle Katılmıyorum" class="required"
+                      onchange="getVals(this, 'question_13');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Fikir Belirtmek İstemiyorum
+                    <input type="radio" name="question_13" value="Fikir Belirtmek İstemiyorum" class="required"
+                      onchange="getVals(this, 'question_13');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                   <!-- <div class="form-group">
                   <label class="container_radio version_2">Hiç katılmıyorum
                     <input type="radio" name="question_9" value="Hiç katılmıyorum" class="required"
                       onchange="getVals(this, 'question_9');" />
@@ -852,13 +1288,57 @@
                       onchange="getVals(this, 'question_9');" />
                     <span class="checkmark"></span>
                   </label>
-                </div>
+                </div> -->
+              </div>
 
+              <div class="step">
                 <h3 class="main_question">
-                  <strong></strong>Bir şirketin üst düzey yöneticisine kıyasla maksimum 4 yıl tecrübesi olan bir
-                  çalışanın sunumunu dinlemek benim için daha dikkat çekicidir.
+                  <strong>11/31</strong>	Birevim’den kolay kolay ayrılmam
                 </h3>
                 <div class="form-group">
+                  <label class="container_radio version_2">Kesinlikle Katılıyorum
+                    <input type="radio" name="question_14" value="Kesinlikle Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_14');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Oldukça Katılıyorum
+                    <input type="radio" name="question_14" value="Oldukça Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_14');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Katılıyorum
+                    <input type="radio" name="question_14" value="Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_14');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Pek Katılmıyorum
+                    <input type="radio" name="question_14" value="Pek Katılmıyorum" class="required"
+                      onchange="getVals(this, 'question_14');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+
+                <div class="form-group">
+                  <label class="container_radio version_2">Kesinlikle Katılmıyorum
+                    <input type="radio" name="question_14" value="Kesinlikle Katılmıyorum" class="required"
+                      onchange="getVals(this, 'question_14');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Fikir Belirtmek İstemiyorum
+                    <input type="radio" name="question_14" value="Fikir Belirtmek İstemiyorum" class="required"
+                      onchange="getVals(this, 'question_14');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <!-- <div class="form-group">
                   <label class="container_radio version_2">Hiç katılmıyorum
                     <input type="radio" name="question_10" value="Hiç katılmıyorum" class="required"
                       onchange="getVals(this, 'question_10');" />
@@ -893,16 +1373,54 @@
                       onchange="getVals(this, 'question_10');" />
                     <span class="checkmark"></span>
                   </label>
-                </div>
-
-              </div>
-
-              <div class="step">
+                </div> -->
                 <h3 class="main_question">
-                  <strong>7/8</strong>Başvurulan bir pozisyon için gönderdiğim özgeçmişin çoğu zaman okunmadığını ve
-                  işe alım süreçlerinin fazlasıyla uzun olduğunu düşünüyorum
+                  <strong>12/31</strong>Birevim her gün işimde yapabileceğimin en iyisini yapmam için beni heyecanlandırır.
                 </h3>
                 <div class="form-group">
+                  <label class="container_radio version_2">Kesinlikle Katılıyorum
+                    <input type="radio" name="question_15" value="Kesinlikle Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_15');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Oldukça Katılıyorum
+                    <input type="radio" name="question_15" value="Oldukça Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_15');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Katılıyorum
+                    <input type="radio" name="question_15" value="Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_15');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Pek Katılmıyorum
+                    <input type="radio" name="question_15" value="Pek Katılmıyorum" class="required"
+                      onchange="getVals(this, 'question_15');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+
+                <div class="form-group">
+                  <label class="container_radio version_2">Kesinlikle Katılmıyorum
+                    <input type="radio" name="question_15" value="Kesinlikle Katılmıyorum" class="required"
+                      onchange="getVals(this, 'question_15');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Fikir Belirtmek İstemiyorum
+                    <input type="radio" name="question_15" value="Fikir Belirtmek İstemiyorum" class="required"
+                      onchange="getVals(this, 'question_15');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <!-- <div class="form-group">
                   <label class="container_radio version_2">Hiç katılmıyorum
                     <input type="radio" name="question_11" value="Hiç katılmıyorum" class="required"
                       onchange="getVals(this, 'question_11');" />
@@ -937,13 +1455,58 @@
                       onchange="getVals(this, 'question_11');" />
                     <span class="checkmark"></span>
                   </label>
+                </div> -->
+              </div>
+
+              <div class="step">
+                <h3 class="main_question">
+                  <strong>13/31</strong>Genelde bana sağlanan yan faydalar (sağlık sigortası, yol, yemek vb.) ihtiyaçlarımı yeterince karşılamaktadır.
+                </h3>
+
+                <div class="form-group">
+                  <label class="container_radio version_2">Kesinlikle Katılıyorum
+                    <input type="radio" name="question_16" value="Kesinlikle Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_16');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Oldukça Katılıyorum
+                    <input type="radio" name="question_16" value="Oldukça Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_16');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Katılıyorum
+                    <input type="radio" name="question_16" value="Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_16');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Pek Katılmıyorum
+                    <input type="radio" name="question_16" value="Pek Katılmıyorum" class="required"
+                      onchange="getVals(this, 'question_16');" />
+                    <span class="checkmark"></span>
+                  </label>
                 </div>
 
-                <h3 class="main_question">
-                  <strong></strong>Başvurduğum şirketin uzaktan çalışma imkânını da sunması iş tercihim için önemli
-                  bir etkendir.
-                </h3>
                 <div class="form-group">
+                  <label class="container_radio version_2">Kesinlikle Katılmıyorum
+                    <input type="radio" name="question_16" value="Kesinlikle Katılmıyorum" class="required"
+                      onchange="getVals(this, 'question_16');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Fikir Belirtmek İstemiyorum
+                    <input type="radio" name="question_16" value="Fikir Belirtmek İstemiyorum" class="required"
+                      onchange="getVals(this, 'question_16');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <!-- <div class="form-group">
                   <label class="container_radio version_2">Hiç katılmıyorum
                     <input type="radio" name="question_12" value="Hiç katılmıyorum" class="required"
                       onchange="getVals(this, 'question_12');" />
@@ -978,16 +1541,57 @@
                       onchange="getVals(this, 'question_12');" />
                     <span class="checkmark"></span>
                   </label>
+                </div> -->
+                <h3 class="main_question">
+                  <strong>14/31</strong>Diğer şirketlerde benzer işleri yapanlara ödenen ücretlere baktığımda kendi aldığım ücretten memnunum.
+                </h3>
+
+
+                <div class="form-group">
+                  <label class="container_radio version_2">Kesinlikle Katılıyorum
+                    <input type="radio" name="question_17" value="Kesinlikle Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_17');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Oldukça Katılıyorum
+                    <input type="radio" name="question_17" value="Oldukça Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_17');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Katılıyorum
+                    <input type="radio" name="question_17" value="Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_17');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Pek Katılmıyorum
+                    <input type="radio" name="question_17" value="Pek Katılmıyorum" class="required"
+                      onchange="getVals(this, 'question_17');" />
+                    <span class="checkmark"></span>
+                  </label>
                 </div>
 
-              </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Kesinlikle Katılmıyorum
+                    <input type="radio" name="question_17" value="Kesinlikle Katılmıyorum" class="required"
+                      onchange="getVals(this, 'question_17');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Fikir Belirtmek İstemiyorum
+                    <input type="radio" name="question_17" value="Fikir Belirtmek İstemiyorum" class="required"
+                      onchange="getVals(this, 'question_17');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
 
-              <div class="step">
-                <h3 class="main_question">
-                  <strong>8/8</strong>Bir şirketin sana sunabileceklerini içeren aşağıdaki listeyi, kendi önem sırana
-                  en çok beklediğinden en az beklediğe göre nasıl sıralarsın ?
-                </h3>
-                <p>
+                <!-- <p>
                   <span>
                     *Sıralamak istediğiniz öğeyi sürükleyip bırakabilirsiniz
                   </span>
@@ -1032,11 +1636,840 @@
                     </div>
                   </div>
 
+                </div> -->
+              </div>
+
+
+              <div class="step">
+                <h3 class="main_question">
+                  <strong>15/31</strong>Kurumumda sosyal aktiviteler yeterlidir.
+                </h3>
+                <div class="form-group">
+                  <label class="container_radio version_2">Kesinlikle Katılıyorum
+                    <input type="radio" name="question_18" value="Kesinlikle Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_18');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Oldukça Katılıyorum
+                    <input type="radio" name="question_18" value="Oldukça Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_18');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Katılıyorum
+                    <input type="radio" name="question_18" value="Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_18');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Pek Katılmıyorum
+                    <input type="radio" name="question_18" value="Pek Katılmıyorum" class="required"
+                      onchange="getVals(this, 'question_18');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+
+                <div class="form-group">
+                  <label class="container_radio version_2">Kesinlikle Katılmıyorum
+                    <input type="radio" name="question_18" value="Kesinlikle Katılmıyorum" class="required"
+                      onchange="getVals(this, 'question_18');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Fikir Belirtmek İstemiyorum
+                    <input type="radio" name="question_18" value="Fikir Belirtmek İstemiyorum" class="required"
+                      onchange="getVals(this, 'question_18');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <h3 class="main_question">
+                  <strong>16/31</strong>Başarılarım karşılığında, (aldığım ücretin ve yan hakların dışında) takdir ediliyorum.
+                </h3>
+                <div class="form-group">
+                  <label class="container_radio version_2">Kesinlikle Katılıyorum
+                    <input type="radio" name="question_19" value="Kesinlikle Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_19');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Oldukça Katılıyorum
+                    <input type="radio" name="question_19" value="Oldukça Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_19');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Katılıyorum
+                    <input type="radio" name="question_19" value="Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_19');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Pek Katılmıyorum
+                    <input type="radio" name="question_19" value="Pek Katılmıyorum" class="required"
+                      onchange="getVals(this, 'question_19');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+
+                <div class="form-group">
+                  <label class="container_radio version_2">Kesinlikle Katılmıyorum
+                    <input type="radio" name="question_19" value="Kesinlikle Katılmıyorum" class="required"
+                      onchange="getVals(this, 'question_19');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Fikir Belirtmek İstemiyorum
+                    <input type="radio" name="question_19" value="Fikir Belirtmek İstemiyorum" class="required"
+                      onchange="getVals(this, 'question_19');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+            
+
+              <div class="step">
+                <h3 class="main_question">
+                  <strong>17/31</strong>	Performansım somut, ölçülebilir ve işimle ilgili göstergelerle değerlendirilir.
+                </h3>
+                <div class="form-group">
+                  <label class="container_radio version_2">Kesinlikle Katılıyorum
+                    <input type="radio" name="question_20" value="Kesinlikle Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_20');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Oldukça Katılıyorum
+                    <input type="radio" name="question_20" value="Oldukça Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_20');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Katılıyorum
+                    <input type="radio" name="question_20" value="Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_20');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Pek Katılmıyorum
+                    <input type="radio" name="question_20" value="Pek Katılmıyorum" class="required"
+                      onchange="getVals(this, 'question_20');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+
+                <div class="form-group">
+                  <label class="container_radio version_2">Kesinlikle Katılmıyorum
+                    <input type="radio" name="question_20" value="Kesinlikle Katılmıyorum" class="required"
+                      onchange="getVals(this, 'question_20');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Fikir Belirtmek İstemiyorum
+                    <input type="radio" name="question_20" value="Fikir Belirtmek İstemiyorum" class="required"
+                      onchange="getVals(this, 'question_20');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <h3 class="main_question">
+                  <strong>18/31</strong>Birevim’e katkı sağlayacak bir öneride bulunduğumda bu ödüllendirilir.
+                </h3>
+                <div class="form-group">
+                  <label class="container_radio version_2">Kesinlikle Katılıyorum
+                    <input type="radio" name="question_21" value="Kesinlikle Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_21');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Oldukça Katılıyorum
+                    <input type="radio" name="question_21" value="Oldukça Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_21');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Katılıyorum
+                    <input type="radio" name="question_21" value="Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_21');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Pek Katılmıyorum
+                    <input type="radio" name="question_21" value="Pek Katılmıyorum" class="required"
+                      onchange="getVals(this, 'question_21');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+
+                <div class="form-group">
+                  <label class="container_radio version_2">Kesinlikle Katılmıyorum
+                    <input type="radio" name="question_21" value="Kesinlikle Katılmıyorum" class="required"
+                      onchange="getVals(this, 'question_21');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Fikir Belirtmek İstemiyorum
+                    <input type="radio" name="question_21" value="Fikir Belirtmek İstemiyorum" class="required"
+                      onchange="getVals(this, 'question_21');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+            
+
+
+              <div class="step">
+                <h3 class="main_question">
+                  <strong>19/31</strong>	Gelişim alanlarımla ilgili aksiyon planı oluşturulmaktadır.
+                </h3>
+                <div class="form-group">
+                  <label class="container_radio version_2">Kesinlikle Katılıyorum
+                    <input type="radio" name="question_22" value="Kesinlikle Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_22');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Oldukça Katılıyorum
+                    <input type="radio" name="question_22" value="Oldukça Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_22');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Katılıyorum
+                    <input type="radio" name="question_22" value="Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_22');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Pek Katılmıyorum
+                    <input type="radio" name="question_22" value="Pek Katılmıyorum" class="required"
+                      onchange="getVals(this, 'question_22');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+
+                <div class="form-group">
+                  <label class="container_radio version_2">Kesinlikle Katılmıyorum
+                    <input type="radio" name="question_22" value="Kesinlikle Katılmıyorum" class="required"
+                      onchange="getVals(this, 'question_22');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Fikir Belirtmek İstemiyorum
+                    <input type="radio" name="question_22" value="Fikir Belirtmek İstemiyorum" class="required"
+                      onchange="getVals(this, 'question_22');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <h3 class="main_question">
+                  <strong>20/31</strong>Atama ve terfi kararları kurallara uygun biçimde şeffaf ve liyakata bağlı olarak alınır.
+                </h3>
+                <div class="form-group">
+                  <label class="container_radio version_2">Kesinlikle Katılıyorum
+                    <input type="radio" name="question_23" value="Kesinlikle Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_23');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Oldukça Katılıyorum
+                    <input type="radio" name="question_23" value="Oldukça Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_23');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Katılıyorum
+                    <input type="radio" name="question_23" value="Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_23');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Pek Katılmıyorum
+                    <input type="radio" name="question_23" value="Pek Katılmıyorum" class="required"
+                      onchange="getVals(this, 'question_23');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+
+                <div class="form-group">
+                  <label class="container_radio version_2">Kesinlikle Katılmıyorum
+                    <input type="radio" name="question_23" value="Kesinlikle Katılmıyorum" class="required"
+                      onchange="getVals(this, 'question_23');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Fikir Belirtmek İstemiyorum
+                    <input type="radio" name="question_23" value="Fikir Belirtmek İstemiyorum" class="required"
+                      onchange="getVals(this, 'question_23');" />
+                    <span class="checkmark"></span>
+                  </label>
                 </div>
               </div>
 
-              <!-- 3.Bölüm -->
+
+
+
               <div class="step">
+                <h3 class="main_question">
+                  <strong>21/31</strong>Performansımın farkedilip doğru değerlendirildiğini düşünüyorum.
+                </h3>
+                <div class="form-group">
+                  <label class="container_radio version_2">Kesinlikle Katılıyorum
+                    <input type="radio" name="question_24" value="Kesinlikle Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_24');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Oldukça Katılıyorum
+                    <input type="radio" name="question_24" value="Oldukça Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_24');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Katılıyorum
+                    <input type="radio" name="question_24" value="Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_24');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Pek Katılmıyorum
+                    <input type="radio" name="question_24" value="Pek Katılmıyorum" class="required"
+                      onchange="getVals(this, 'question_24');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+
+                <div class="form-group">
+                  <label class="container_radio version_2">Kesinlikle Katılmıyorum
+                    <input type="radio" name="question_24" value="Kesinlikle Katılmıyorum" class="required"
+                      onchange="getVals(this, 'question_24');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Fikir Belirtmek İstemiyorum
+                    <input type="radio" name="question_24" value="Fikir Belirtmek İstemiyorum" class="required"
+                      onchange="getVals(this, 'question_24');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <h3 class="main_question">
+                  <strong>22/31</strong>	Birevim faaliyet gösterdiği sektörün başarılı ve saygın şirketlerinden biridir.
+                </h3>
+                <div class="form-group">
+                  <label class="container_radio version_2">Kesinlikle Katılıyorum
+                    <input type="radio" name="question_25" value="Kesinlikle Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_25');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Oldukça Katılıyorum
+                    <input type="radio" name="question_25" value="Oldukça Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_25');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Katılıyorum
+                    <input type="radio" name="question_25" value="Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_25');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Pek Katılmıyorum
+                    <input type="radio" name="question_25" value="Pek Katılmıyorum" class="required"
+                      onchange="getVals(this, 'question_25');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+
+                <div class="form-group">
+                  <label class="container_radio version_2">Kesinlikle Katılmıyorum
+                    <input type="radio" name="question_25" value="Kesinlikle Katılmıyorum" class="required"
+                      onchange="getVals(this, 'question_25');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Fikir Belirtmek İstemiyorum
+                    <input type="radio" name="question_25" value="Fikir Belirtmek İstemiyorum" class="required"
+                      onchange="getVals(this, 'question_25');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+
+
+
+              
+              <div class="step">
+                <h3 class="main_question">
+                  <strong>23/31</strong>Birevim iyi bir imaja ve itibara sahiptir.
+                </h3>
+                <div class="form-group">
+                  <label class="container_radio version_2">Kesinlikle Katılıyorum
+                    <input type="radio" name="question_26" value="Kesinlikle Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_26');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Oldukça Katılıyorum
+                    <input type="radio" name="question_26" value="Oldukça Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_26');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Katılıyorum
+                    <input type="radio" name="question_26" value="Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_26');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Pek Katılmıyorum
+                    <input type="radio" name="question_26" value="Pek Katılmıyorum" class="required"
+                      onchange="getVals(this, 'question_26');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+
+                <div class="form-group">
+                  <label class="container_radio version_2">Kesinlikle Katılmıyorum
+                    <input type="radio" name="question_26" value="Kesinlikle Katılmıyorum" class="required"
+                      onchange="getVals(this, 'question_26');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Fikir Belirtmek İstemiyorum
+                    <input type="radio" name="question_26" value="Fikir Belirtmek İstemiyorum" class="required"
+                      onchange="getVals(this, 'question_26');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <h3 class="main_question">
+                  <strong>24/31</strong>	Başkalarına Birevim'de çalıştığımı söylemekten gurur duyuyorum.
+                </h3>
+                <div class="form-group">
+                  <label class="container_radio version_2">Kesinlikle Katılıyorum
+                    <input type="radio" name="question_27" value="Kesinlikle Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_27');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Oldukça Katılıyorum
+                    <input type="radio" name="question_27" value="Oldukça Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_27');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Katılıyorum
+                    <input type="radio" name="question_27" value="Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_27');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Pek Katılmıyorum
+                    <input type="radio" name="question_27" value="Pek Katılmıyorum" class="required"
+                      onchange="getVals(this, 'question_27');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+
+                <div class="form-group">
+                  <label class="container_radio version_2">Kesinlikle Katılmıyorum
+                    <input type="radio" name="question_27" value="Kesinlikle Katılmıyorum" class="required"
+                      onchange="getVals(this, 'question_27');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Fikir Belirtmek İstemiyorum
+                    <input type="radio" name="question_27" value="Fikir Belirtmek İstemiyorum" class="required"
+                      onchange="getVals(this, 'question_27');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+
+
+
+
+
+              <div class="step">
+                <h3 class="main_question">
+                  <strong>25/31</strong>	Birevim yüksek performans gösteren çalışan ile düşük performans gösteren çalışanı ayırt eder.
+                </h3>
+                <div class="form-group">
+                  <label class="container_radio version_2">Kesinlikle Katılıyorum
+                    <input type="radio" name="question_28" value="Kesinlikle Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_28');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Oldukça Katılıyorum
+                    <input type="radio" name="question_28" value="Oldukça Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_28');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Katılıyorum
+                    <input type="radio" name="question_28" value="Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_28');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Pek Katılmıyorum
+                    <input type="radio" name="question_28" value="Pek Katılmıyorum" class="required"
+                      onchange="getVals(this, 'question_28');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+
+                <div class="form-group">
+                  <label class="container_radio version_2">Kesinlikle Katılmıyorum
+                    <input type="radio" name="question_28" value="Kesinlikle Katılmıyorum" class="required"
+                      onchange="getVals(this, 'question_28');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Fikir Belirtmek İstemiyorum
+                    <input type="radio" name="question_28" value="Fikir Belirtmek İstemiyorum" class="required"
+                      onchange="getVals(this, 'question_28');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <h3 class="main_question">
+                  <strong>26/31</strong>	Üst yönetim (Genel Müdür ve Genel Müdür Yardımcıları) açık, dürüst ve şeffaf bir iletişim tarzı sergilemektedir.
+                </h3>
+                <div class="form-group">
+                  <label class="container_radio version_2">Kesinlikle Katılıyorum
+                    <input type="radio" name="question_29" value="Kesinlikle Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_29');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Oldukça Katılıyorum
+                    <input type="radio" name="question_29" value="Oldukça Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_29');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Katılıyorum
+                    <input type="radio" name="question_29" value="Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_29');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Pek Katılmıyorum
+                    <input type="radio" name="question_29" value="Pek Katılmıyorum" class="required"
+                      onchange="getVals(this, 'question_29');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+
+                <div class="form-group">
+                  <label class="container_radio version_2">Kesinlikle Katılmıyorum
+                    <input type="radio" name="question_29" value="Kesinlikle Katılmıyorum" class="required"
+                      onchange="getVals(this, 'question_29');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Fikir Belirtmek İstemiyorum
+                    <input type="radio" name="question_29" value="Fikir Belirtmek İstemiyorum" class="required"
+                      onchange="getVals(this, 'question_29');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+
+
+
+
+              <div class="step">
+                <h3 class="main_question">
+                  <strong>27/31</strong>	Birevim’de işler politika ve prosedürlere göre yürütülür.
+                </h3>
+                <div class="form-group">
+                  <label class="container_radio version_2">Kesinlikle Katılıyorum
+                    <input type="radio" name="question_30" value="Kesinlikle Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_30');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Oldukça Katılıyorum
+                    <input type="radio" name="question_30" value="Oldukça Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_30');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Katılıyorum
+                    <input type="radio" name="question_30" value="Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_30');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Pek Katılmıyorum
+                    <input type="radio" name="question_30" value="Pek Katılmıyorum" class="required"
+                      onchange="getVals(this, 'question_30');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+
+                <div class="form-group">
+                  <label class="container_radio version_2">Kesinlikle Katılmıyorum
+                    <input type="radio" name="question_30" value="Kesinlikle Katılmıyorum" class="required"
+                      onchange="getVals(this, 'question_30');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Fikir Belirtmek İstemiyorum
+                    <input type="radio" name="question_30" value="Fikir Belirtmek İstemiyorum" class="required"
+                      onchange="getVals(this, 'question_30');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <h3 class="main_question">
+                  <strong>28/31</strong>	Üst Yönetim kurum ile ilgili konularda etkili karar alır.
+                </h3>
+                <div class="form-group">
+                  <label class="container_radio version_2">Kesinlikle Katılıyorum
+                    <input type="radio" name="question_31" value="Kesinlikle Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_31');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Oldukça Katılıyorum
+                    <input type="radio" name="question_31" value="Oldukça Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_31');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Katılıyorum
+                    <input type="radio" name="question_31" value="Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_31');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Pek Katılmıyorum
+                    <input type="radio" name="question_31" value="Pek Katılmıyorum" class="required"
+                      onchange="getVals(this, 'question_31');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+
+                <div class="form-group">
+                  <label class="container_radio version_2">Kesinlikle Katılmıyorum
+                    <input type="radio" name="question_31" value="Kesinlikle Katılmıyorum" class="required"
+                      onchange="getVals(this, 'question_31');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Fikir Belirtmek İstemiyorum
+                    <input type="radio" name="question_31" value="Fikir Belirtmek İstemiyorum" class="required"
+                      onchange="getVals(this, 'question_31');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+
+
+
+
+
+              <div class="step">
+                <h3 class="main_question">
+                  <strong>29/31</strong>	Bağlı bulunduğum ilk yöneticiile rahatça konuşabilirim, ona kolayca ulaşılabilirim.
+                </h3>
+                <div class="form-group">
+                  <label class="container_radio version_2">Kesinlikle Katılıyorum
+                    <input type="radio" name="question_32" value="Kesinlikle Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_32');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Oldukça Katılıyorum
+                    <input type="radio" name="question_32" value="Oldukça Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_32');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Katılıyorum
+                    <input type="radio" name="question_32" value="Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_32');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Pek Katılmıyorum
+                    <input type="radio" name="question_32" value="Pek Katılmıyorum" class="required"
+                      onchange="getVals(this, 'question_32');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+
+                <div class="form-group">
+                  <label class="container_radio version_2">Kesinlikle Katılmıyorum
+                    <input type="radio" name="question_32" value="Kesinlikle Katılmıyorum" class="required"
+                      onchange="getVals(this, 'question_32');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Fikir Belirtmek İstemiyorum
+                    <input type="radio" name="question_32" value="Fikir Belirtmek İstemiyorum" class="required"
+                      onchange="getVals(this, 'question_32');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <h3 class="main_question">
+                  <strong>30/31</strong>Bağlı bulunduğum ilk yönetici işim ve kişisel gelişimimle ilgili konularda zamanında yapıcı geri bildirim verir.
+                </h3>
+                <div class="form-group">
+                  <label class="container_radio version_2">Kesinlikle Katılıyorum
+                    <input type="radio" name="question_33" value="Kesinlikle Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_33');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Oldukça Katılıyorum
+                    <input type="radio" name="question_33" value="Oldukça Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_33');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Katılıyorum
+                    <input type="radio" name="question_33" value="Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_33');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Pek Katılmıyorum
+                    <input type="radio" name="question_33" value="Pek Katılmıyorum" class="required"
+                      onchange="getVals(this, 'question_33');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+
+                <div class="form-group">
+                  <label class="container_radio version_2">Kesinlikle Katılmıyorum
+                    <input type="radio" name="question_33" value="Kesinlikle Katılmıyorum" class="required"
+                      onchange="getVals(this, 'question_33');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Fikir Belirtmek İstemiyorum
+                    <input type="radio" name="question_33" value="Fikir Belirtmek İstemiyorum" class="required"
+                      onchange="getVals(this, 'question_33');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+              
+              <div class="step">
+                <h3 class="main_question">
+                  <strong>31/31</strong>	Bağlı bulunduğum ilk yönetici çalışanların yetkinliklerini geliştirmelerine yardım ettiğine inanıyorum.
+                </h3>
+                <div class="form-group">
+                  <label class="container_radio version_2">Kesinlikle Katılıyorum
+                    <input type="radio" name="question_34" value="Kesinlikle Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_34');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Oldukça Katılıyorum
+                    <input type="radio" name="question_34" value="Oldukça Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_34');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Katılıyorum
+                    <input type="radio" name="question_34" value="Katılıyorum" class="required"
+                      onchange="getVals(this, 'question_34');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Pek Katılmıyorum
+                    <input type="radio" name="question_34" value="Pek Katılmıyorum" class="required"
+                      onchange="getVals(this, 'question_34');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+
+                <div class="form-group">
+                  <label class="container_radio version_2">Kesinlikle Katılmıyorum
+                    <input type="radio" name="question_34" value="Kesinlikle Katılmıyorum" class="required"
+                      onchange="getVals(this, 'question_34');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="container_radio version_2">Fikir Belirtmek İstemiyorum
+                    <input type="radio" name="question_34" value="Fikir Belirtmek İstemiyorum" class="required"
+                      onchange="getVals(this, 'question_34');" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+              <!-- 3.Bölüm -->
+              <!-- <div class="step">
                 <h3 class="main_question">
                   <strong style="font-weight: bold;color: #2387ab;">3. Bölüm: Pfizer ve İşveren Markası</strong>
                 </h3>
@@ -1625,7 +3058,7 @@
                   <textarea required rows="5" id="textarea1013_4" name="textarea1013_4" class="form-control"
                     style="height:100px;" placeholder="Bir cevap yazınız.."></textarea>
                 </div>
-              </div>
+              </div> -->
 
               <div class="submit step">
                 <h3 class="main_question"><strong></strong>Ankete dair görüşleriniz</h3>
@@ -1741,7 +3174,7 @@
         <div class="modal-body">
           <p>
             Değerli katılımcımız, Kişisel Verilerin Korunması Kanunu kapsamında sizleri bilgilendirmek istiyoruz.
-            Badiworks olarak kişisel verilerinizin güvenliği hususuna azami hassasiyet göstermekte olduğumuzu bilmenizi
+            Birevim olarak kişisel verilerinizin güvenliği hususuna azami hassasiyet göstermekte olduğumuzu bilmenizi
             isteriz. Bu sorumluluğumuzun tam idraki ile
             KVK Kanunu'nda tanımlı şekli ile "Veri Sorumlusu" sıfatıyla, kişisel verilerinizi aşağıda izah edildiği
             surette ve mevzuat tarafından emredilen sınırlar çerçevesinde işlemekteyiz.
@@ -1749,10 +3182,10 @@
           <p>
             6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVKK") uyarınca kimliğinizi belirli veya belirlenebilir
             kılan her türlü bilginiz ve özel nitelikli kişisel verileriniz dâhil kişisel verileriniz, veri sorumlusu
-            olarak Pfizer tarafından işlenebilecektir.
+            olarak Birevim tarafından işlenebilecektir.
           </p>
           <p>
-            Pfizer 6698 sayılı Kişisel Verilerin Korunması Kanununda yer alan düzenlemelere uygun olarak kişisel veri
+            Birevim 6698 sayılı Kişisel Verilerin Korunması Kanununda yer alan düzenlemelere uygun olarak kişisel veri
             işleme faaliyetlerini yürütmektedir.
           </p>
         </div>
