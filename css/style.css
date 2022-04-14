@@ -366,7 +366,7 @@ a.btn_1.rounded, .btn_1.rounded {
 .content-left {
   /* background-color: #2387ab; */
   padding: 0;
-  background-image: url(../img/right-panel-bg.png);
+  background-image: url(../img/right-panel-bg-2.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -1335,6 +1335,10 @@ span.error:after {
   top: -20px;
 }
 
+.styled-select-2 span.error {
+  top: -20px;
+}
+
 .terms span.error {
   top: -30px;
   left: -15px;
@@ -2054,7 +2058,7 @@ input[type=file]::-webkit-file-upload-button:focus, input[type=file].invalid::-w
   padding-bottom: 35px;
 }
 
-.pfizer-loader {
+.birevim-loader {
   position: fixed;
   left: 0px;
   top: 0px;

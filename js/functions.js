@@ -1,3 +1,6 @@
+var _emailAddress = "";
+var _securityCode = "";
+
 (function ($) {
 
 	"use strict";
@@ -5,19 +8,121 @@
 	$(".sortable").sortable();
 
 	$(".btnStart").click(function () {
-		if ($("#terms").is(":checked")) {
-			$(".content-left").animate({ height: 0, opacity: 0 }, 'slow', function () {
-				$(".content-right").fadeIn(400);
+
+		_securityCode = $.trim($("#securityCode").val());
+
+		if (_securityCode === null || _securityCode === "" || _securityCode.length < 6) {
+			swal({
+				title: 'Lütfen kodu doğru girdiğinizden emin olun!',
+				icon: 'warning'
 			});
-		} else {
-			$("#checkTermsMessage").fadeIn(200);
+			return false;
 		}
+
+		if (!($("#terms").is(":checked"))) {
+			$("#checkTermsMessage").fadeIn(200);
+			return false;
+		}
+
+		$.ajax({
+			type: 'POST',
+			url: 'check.php',
+			dataType: "json",
+			data: { securityCode: _securityCode } // getting filed value in serialize form
+		})
+			.done(function (data) { // if getting done then call.
+				console.log(data);
+				if (data.status === "ok") {
+					$('.birevim-loader').fadeOut(1000);
+
+					if (data.result.answers != null) {
+						swal({
+							title: 'Katılımınız için teşekkür ederiz',
+							icon: 'warning'
+						});
+					} else {
+						$(".content-left").animate({ height: 0, opacity: 0 }, 'slow', function () {
+							$(".content-right").fadeIn(400);
+						});
+					}
+					_emailAddress = data.result.emailAddress;
+
+					return false;
+
+				} else {
+					$('.birevim-loader').fadeOut(1000);
+					swal({
+						title: data.result,
+						icon: 'warning'
+					});
+					console.log(data);
+				}
+			})
+			.fail(function (e) { // if fail then getting message
+				console.log(e);
+				$('.birevim-loader').fadeOut(200);
+				swal("Hata", "Bağlantı hatası! Lütfen tekrar deneyin.", "error");
+			});
+
 	});
 
 	$('#terms').change(function () {
 		if (this.checked) {
 			$("#checkTermsMessage").fadeOut(200);
 		}
+	});
+
+	$("#securityCode").keypress(function (e) {
+		if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
+			return false;
+		}
+	});
+
+	$("#workSpace").on("change", function () {
+
+		var workVal = $(this).val();
+		$("#departments").empty();
+
+		$("#departments").append('<option selected value="">Şube/Birim Seçiniz..</option>');
+
+		if (workVal === "Genel Müdürlük") {
+
+			$.getJSON("birimler.json", function (sonuc) {
+				var _sonuc=sonuc
+				_sonuc.sort(function (a, b) {
+					return a.birim_ad.localeCompare(b.birim_ad);
+				});
+				$("#departments").append('<option value="Belirtmek İstemiyorum">Belirtmek İstemiyorum</option>');
+				$.each(_sonuc, function (index, value) {
+					var row = "";
+					row += '<option value="' + value.birim_ad + '">' + value.birim_ad + '</option>';
+					$("#departments").append(row);
+				});
+			});
+
+		} else if (workVal === "Şube") {
+
+			$.getJSON("subeler.json", function (sonuc) {
+				var _sonuc=sonuc
+				_sonuc.sort(function (a, b) {
+					return a.sube_ad.localeCompare(b.sube_ad);
+				});
+				$("#departments").append('<option value="Belirtmek İstemiyorum">Belirtmek İstemiyorum</option>');
+				$.each(_sonuc, function (index, value) {
+					var row = "";
+					row += '<option value="' + value.sube_ad + '">' + value.sube_ad + '</option>';
+					$("#departments").append(row);
+				});
+			});
+
+		} else {
+			$("#departments").append('<option value="Belirtmek İstemiyorum">Belirtmek İstemiyorum</option>');
+		}
+
+		setTimeout(() => {
+			$('.styled-select-2 select').niceSelect('update');
+		}, 200);
+
 	});
 
 	var x = true, y = true;
@@ -127,7 +232,7 @@
 	$(window).on('load', function () { // makes sure the whole site is loaded
 		$('[data-loader="circle-side"]').fadeOut(); // will first fade out the loading animation
 		// $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
-		$('.pfizer-loader').delay(800).fadeOut('slow');
+		$('.birevim-loader').delay(800).fadeOut('slow');
 		$('body').delay(350).css({
 			'overflow': 'visible'
 		});
@@ -136,54 +241,23 @@
 	// Submit loader mask 
 	$('form#wrapped').on('submit', function () {
 
-		var unindexed_array = $(this).serializeArray();
-		var _values = [];
-		var indexed_array = {};
-		var sortable_question = "";
-
-		unindexed_array.forEach(function (item) {
-			var existing = _values.filter(function (v, i) {
-				return v.name == item.name;
-			});
-			if (existing.length) {
-				var existingIndex = _values.indexOf(existing[0]);
-				_values[existingIndex].value = _values[existingIndex].value.concat(item.value);
-			} else {
-				if (typeof item.value == 'string')
-					item.value = [item.value];
-				_values.push(item);
-			}
-		});
-
-		$.map(_values, function (n, i) {
-			indexed_array[n['name']] = n['value'];
-		});
-
-		x == true ? indexed_array.question_19 = [""] : indexed_array.question_18 = [""];
-		y == true ? indexed_array.question_25 = [""] : indexed_array.question_24 = [""];
-
-		$(".sortable label").each(function (index) {
-			sortable_question += (index + 1) + "-" + $(this).text() + ",";
-		});
-
-		sortable_question = sortable_question.substring(0, sortable_question.length - 1);
-		indexed_array.sortableQuestion = [sortable_question];
+		var _formValues = $("form#wrapped").serializeArray();
 
 		var form = $("form#wrapped");
 		form.validate();
 		if (form.valid()) {
-			$(".pfizer-loader").fadeIn();
+			$(".birevim-loader").fadeIn();
 
 			$.ajax({
 				type: 'POST',
 				url: 'insert.php',
 				dataType: "json",
-				data: indexed_array // getting filed value in serialize form
+				data: { formValues: _formValues, emailAddress: _emailAddress } // getting filed value in serialize form
 			})
 				.done(function (data) { // if getting done then call.
 
 					if (data.status === "ok") {
-						$('.pfizer-loader').fadeOut(1000);
+						$('.birevim-loader').fadeOut(1000);
 						swal({
 							title: 'Anket sonucunuz kaydedildi!',
 							icon: 'success'
@@ -191,7 +265,7 @@
 							location.reload();
 						});
 					} else {
-						$('.pfizer-loader').fadeOut(1000);
+						$('.birevim-loader').fadeOut(1000);
 						swal({
 							title: data,
 							icon: 'warning'
@@ -201,7 +275,7 @@
 				})
 				.fail(function (e) { // if fail then getting message
 					console.log(e);
-					$('.pfizer-loader').fadeOut(200);
+					$('.birevim-loader').fadeOut(200);
 					swal("Hata", "Bağlantı hatası! Lütfen tekrar deneyin.", "error");
 				});
 			return false;
@@ -211,6 +285,7 @@
 
 	// Jquery select
 	$('.styled-select select').niceSelect();
+	$('.styled-select-2 select').niceSelect();
 
 	// Show Password
 	$('#password1, #password2').hidePassword('focus', {
