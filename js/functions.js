@@ -78,6 +78,23 @@ var _securityCode = "";
 		}
 	});
 
+	var _birimler, _subeler;
+
+
+	$.getJSON("birimler.json", function (sonuc) {
+		_birimler = sonuc
+		_birimler.sort(function (a, b) {
+			return a.birim_ad.localeCompare(b.birim_ad);
+		});
+	});
+
+	$.getJSON("subeler.json", function (sonuc) {
+		_subeler = sonuc
+		_subeler.sort(function (a, b) {
+			return a.sube_ad.localeCompare(b.sube_ad);
+		});
+	});
+
 	$("#workSpace").on("change", function () {
 
 		var workVal = $(this).val();
@@ -87,32 +104,20 @@ var _securityCode = "";
 
 		if (workVal === "Genel Müdürlük") {
 
-			$.getJSON("birimler.json", function (sonuc) {
-				var _sonuc=sonuc
-				_sonuc.sort(function (a, b) {
-					return a.birim_ad.localeCompare(b.birim_ad);
-				});
-				$("#departments").append('<option value="Belirtmek İstemiyorum">Belirtmek İstemiyorum</option>');
-				$.each(_sonuc, function (index, value) {
-					var row = "";
-					row += '<option value="' + value.birim_ad + '">' + value.birim_ad + '</option>';
-					$("#departments").append(row);
-				});
+			$("#departments").append('<option value="Belirtmek İstemiyorum">Belirtmek İstemiyorum</option>');
+			$.each(_birimler, function (index, value) {
+				var row = "";
+				row += '<option value="' + value.birim_ad + '">' + value.birim_ad + '</option>';
+				$("#departments").append(row);
 			});
 
 		} else if (workVal === "Şube") {
 
-			$.getJSON("subeler.json", function (sonuc) {
-				var _sonuc=sonuc
-				_sonuc.sort(function (a, b) {
-					return a.sube_ad.localeCompare(b.sube_ad);
-				});
-				$("#departments").append('<option value="Belirtmek İstemiyorum">Belirtmek İstemiyorum</option>');
-				$.each(_sonuc, function (index, value) {
-					var row = "";
-					row += '<option value="' + value.sube_ad + '">' + value.sube_ad + '</option>';
-					$("#departments").append(row);
-				});
+			$("#departments").append('<option value="Belirtmek İstemiyorum">Belirtmek İstemiyorum</option>');
+			$.each(_subeler, function (index, value) {
+				var row = "";
+				row += '<option value="' + value.sube_ad + '">' + value.sube_ad + '</option>';
+				$("#departments").append(row);
 			});
 
 		} else {
