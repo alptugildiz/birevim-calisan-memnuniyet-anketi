@@ -2222,3 +2222,11 @@ body {
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
+
+.modal ul li{
+  margin: 5% 2%;
+}
+
+.nice-select span:first{
+font-weight: bold;
+}

@@ -104,7 +104,7 @@ var _securityCode = "";
 
 		if (workVal === "Genel Müdürlük") {
 
-			$("#departments").append('<option value="Belirtmek İstemiyorum">Belirtmek İstemiyorum</option>');
+			// $("#departments").append('<option value="Belirtmek İstemiyorum">Belirtmek İstemiyorum</option>');
 			$.each(_birimler, function (index, value) {
 				var row = "";
 				row += '<option value="' + value.birim_ad + '">' + value.birim_ad + '</option>';
@@ -113,7 +113,7 @@ var _securityCode = "";
 
 		} else if (workVal === "Şube") {
 
-			$("#departments").append('<option value="Belirtmek İstemiyorum">Belirtmek İstemiyorum</option>');
+			// $("#departments").append('<option value="Belirtmek İstemiyorum">Belirtmek İstemiyorum</option>');
 			$.each(_subeler, function (index, value) {
 				var row = "";
 				row += '<option value="' + value.sube_ad + '">' + value.sube_ad + '</option>';
@@ -121,7 +121,7 @@ var _securityCode = "";
 			});
 
 		} else {
-			$("#departments").append('<option value="Belirtmek İstemiyorum">Belirtmek İstemiyorum</option>');
+			// $("#departments").append('<option value="Belirtmek İstemiyorum">Belirtmek İstemiyorum</option>');
 		}
 
 		setTimeout(() => {
