@@ -20,7 +20,7 @@ try {
             echo json_encode($data);
         }
     } else {
-        
+
         $data['status'] = 'err';
         $data['result'] = 'Hatalı Kod!';
         echo json_encode($data);

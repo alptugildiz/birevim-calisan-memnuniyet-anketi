@@ -300,6 +300,7 @@ a.btn_1.rounded, .btn_1.rounded {
     -o-transform: rotate(0);
     transform: rotate(0);
   }
+
   100% {
     -webkit-transform: rotate(360deg);
     -ms-transform: rotate(360deg);
@@ -315,6 +316,7 @@ a.btn_1.rounded, .btn_1.rounded {
     -o-transform: rotate(0);
     transform: rotate(0);
   }
+
   100% {
     -webkit-transform: rotate(360deg);
     -ms-transform: rotate(360deg);
@@ -330,6 +332,7 @@ a.btn_1.rounded, .btn_1.rounded {
     -o-transform: rotate(0);
     transform: rotate(0);
   }
+
   100% {
     -webkit-transform: rotate(360deg);
     -ms-transform: rotate(360deg);
@@ -345,6 +348,7 @@ a.btn_1.rounded, .btn_1.rounded {
     -o-transform: rotate(0);
     transform: rotate(0);
   }
+
   100% {
     -webkit-transform: rotate(360deg);
     -ms-transform: rotate(360deg);
@@ -400,26 +404,33 @@ a.btn_1.rounded, .btn_1.rounded {
   .container_check {
     font-size: 0.72rem !important;
   }
+
   .content-left {
     background-attachment: inherit !important;
   }
+
   .content-left-wrapper {
     padding: 95px 15px 35px 15px;
   }
+
   #bottom-wizard {
     border-top: 0px solid #ededed !important;
     padding-top: 0px !important;
     margin-top: 0px !important;
   }
+
   h3.main_question {
     font-size: 0.8rem !important;
   }
+
   .form-group {
     margin-bottom: 0rem !important;
   }
+
   .container_radio.version_2 {
     /* padding: 0px 0 0 45px !important; */
   }
+
   .container_radio {
     font-size: 0.75rem !important;
     margin-bottom: 2px !important;
@@ -431,48 +442,60 @@ a.btn_1.rounded, .btn_1.rounded {
     margin: 0 0 6px 0 !important;
     font-size: 0.8rem !important;
   }
+
   .form-group {
     margin-bottom: 0rem !important;
   }
+
   .container_radio {
     margin-bottom: 3px !important;
     font-size: 0.7rem !important;
   }
+
   #bottom-wizard {
     padding-top: 10px !important;
     margin-top: 2px !important;
   }
+
   .container_radio.version_2 .checkmark {
     height: 20px !important;
     width: 20px !important;
   }
+
   .container_radio.version_2 .checkmark:after {
     width: 20px !important;
     height: 20px !important;
   }
+
   .container_radio.version_2 .checkmark:before {
     left: 8px !important;
     top: 4px !important;
   }
+
   .container_radio.version_2 {
     padding: 0px 0 0 45px !important;
   }
+
   /**/
   .container_check.version_2 .checkmark {
     height: 20px !important;
     width: 20px !important;
   }
+
   .container_check.version_2 .checkmark:after {
     width: 10px !important;
     height: 10px !important;
   }
+
   .container_check.version_2 .checkmark:before {
     left: 8px !important;
     top: 4px !important;
   }
+
   .container_check.version_2 {
     padding: 0px 0 0 45px !important;
   }
+
   .container_check.version_2 .checkmark:after {
     left: 3px !important;
     top: 3px !important;
@@ -869,6 +892,7 @@ button.submit:before {
   0% {
     stroke-dashoffset: 50px;
   }
+
   100% {
     stroke-dashoffset: 0;
   }
@@ -878,6 +902,7 @@ button.submit:before {
   0% {
     stroke-dashoffset: 50px;
   }
+
   100% {
     stroke-dashoffset: 0;
   }
@@ -887,6 +912,7 @@ button.submit:before {
   0% {
     stroke-dashoffset: 50px;
   }
+
   100% {
     stroke-dashoffset: 0;
   }
@@ -896,6 +922,7 @@ button.submit:before {
   0% {
     stroke-dashoffset: 240px;
   }
+
   100% {
     stroke-dashoffset: 480px;
   }
@@ -905,6 +932,7 @@ button.submit:before {
   0% {
     stroke-dashoffset: 240px;
   }
+
   100% {
     stroke-dashoffset: 480px;
   }
@@ -914,6 +942,7 @@ button.submit:before {
   0% {
     stroke-dashoffset: 240px;
   }
+
   100% {
     stroke-dashoffset: 480px;
   }
@@ -1034,13 +1063,15 @@ footer ul li a:hover {
     font-size: 32px;
     font-size: 2rem;
   }
+
   .sortable label {
     font-size: 0.675rem !important;
     padding: 13px !important;
   }
+
   .sortable-number {
     margin-bottom: 4px !important;
-}
+  }
 }
 
 .main_title h2 em {
@@ -2066,7 +2097,7 @@ input[type=file]::-webkit-file-upload-button:focus, input[type=file].invalid::-w
   height: 100%;
   z-index: 9997;
   background: url('../img/birevim-main-logo.png') 50% 50% no-repeat;
-  background-color: #EEEEEE;
+  background-color: white;
 }
 
 .company-logo-detail:before {
@@ -2168,6 +2199,7 @@ body {
   0% {
     margin-left: 0;
   }
+
   100% {
     margin-left: -1600px;
   }
@@ -2177,6 +2209,7 @@ body {
   0% {
     margin-left: 0;
   }
+
   100% {
     margin-left: -1600px;
   }
@@ -2186,6 +2219,7 @@ body {
   0%, 100% {
     transform: translate3d(0, -25px, 0);
   }
+
   50% {
     transform: translate3d(0, 5px, 0);
   }
@@ -2195,6 +2229,7 @@ body {
   0%, 100% {
     transform: translate3d(0, -25px, 0);
   }
+
   50% {
     transform: translate3d(0, 5px, 0);
   }
@@ -2206,12 +2241,15 @@ body {
   0% {
     transform: scale(1);
   }
+
   50% {
     transform: scale(1.9);
   }
+
   70% {
     transform: scale(1.9);
   }
+
   100% {
     transform: scale(1);
   }
@@ -2223,10 +2261,10 @@ body {
   animation-timing-function: ease-in-out;
 }
 
-.modal ul li{
+.modal ul li {
   margin: 5% 2%;
 }
 
-.nice-select span:first{
-font-weight: bold;
+#workSpace+div span, select[name="question_2"]+div span, select[name="question_3"]+div span {
+  font-weight: bold;
 }

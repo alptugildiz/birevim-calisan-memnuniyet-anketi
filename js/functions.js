@@ -7,6 +7,23 @@ var _securityCode = "";
 
 	$(".sortable").sortable();
 
+	var _birimler, _subeler;
+
+
+	$.getJSON("birimler.json", function (sonuc) {
+		_birimler = sonuc
+		_birimler.sort(function (a, b) {
+			return a.birim_ad.localeCompare(b.birim_ad);
+		});
+	});
+
+	$.getJSON("subeler.json", function (sonuc) {
+		_subeler = sonuc
+		_subeler.sort(function (a, b) {
+			return a.sube_ad.localeCompare(b.sube_ad);
+		});
+	});
+
 	$(".btnStart").click(function () {
 
 		_securityCode = $.trim($("#securityCode").val());
@@ -24,45 +41,70 @@ var _securityCode = "";
 			return false;
 		}
 
-		$.ajax({
-			type: 'POST',
-			url: 'check.php',
-			dataType: "json",
-			data: { securityCode: _securityCode } // getting filed value in serialize form
-		})
-			.done(function (data) { // if getting done then call.
-				console.log(data);
-				if (data.status === "ok") {
-					$('.birevim-loader').fadeOut(1000);
+		$(".content-left").animate({ height: 0, opacity: 0 }, 'slow', function () {
+			$(".content-right").fadeIn(400);
+		});
 
-					if (data.result.answers != null) {
-						swal({
-							title: 'Katılımınız için teşekkür ederiz',
-							icon: 'warning'
-						});
-					} else {
-						$(".content-left").animate({ height: 0, opacity: 0 }, 'slow', function () {
-							$(".content-right").fadeIn(400);
-						});
-					}
-					_emailAddress = data.result.emailAddress;
+		var storedValues = JSON.parse(localStorage.getItem("formValues"));
 
-					return false;
+		var _depVal = "";
 
-				} else {
-					$('.birevim-loader').fadeOut(1000);
-					swal({
-						title: data.result,
-						icon: 'warning'
-					});
-					console.log(data);
+		if ((storedValues != null)) {
+			storedValues.forEach(function (item, index) {
+				if (index === 1) {
+					_depVal = item.value;
 				}
-			})
-			.fail(function (e) { // if fail then getting message
-				console.log(e);
-				$('.birevim-loader').fadeOut(200);
-				swal("Hata", "Bağlantı hatası! Lütfen tekrar deneyin.", "error");
+				if (index < 4) {
+					$('select[name="' + item.name + '"]').next().find('[data-value="' + item.value + '"]').trigger('click');
+				} else {
+					$("input[name='" + item.name + "'][value=" + item.value + "]").attr('checked', 'checked');
+				}
 			});
+		}
+
+		debugger;
+		console.log($('select[name="departments"]').next().find('[data-value="' + _depVal + '"]'));
+		$('select[name="departments"]').next().find('[data-value="' + _depVal + '"]').trigger('click');
+
+		// $.ajax({
+		// 	type: 'POST',
+		// 	url: 'check.php',
+		// 	dataType: "json",
+		// 	data: { securityCode: _securityCode }
+		// })
+		// 	.done(function (data) {
+		// 		console.log(data);
+		// 		if (data.status === "ok") {
+		// 			$('.birevim-loader').fadeOut(1000);
+
+		// 			if (data.result.answers != null) {
+		// 				swal({
+		// 					title: 'Katılımınız için teşekkür ederiz',
+		// 					icon: 'warning'
+		// 				});
+		// 			} else {
+		// 				$(".content-left").animate({ height: 0, opacity: 0 }, 'slow', function () {
+		// 					$(".content-right").fadeIn(400);
+		// 				});
+		// 			}
+		// 			_emailAddress = data.result.emailAddress;
+
+		// 			return false;
+
+		// 		} else {
+		// 			$('.birevim-loader').fadeOut(1000);
+		// 			swal({
+		// 				title: data.result,
+		// 				icon: 'warning'
+		// 			});
+		// 			console.log(data);
+		// 		}
+		// 	})
+		// 	.fail(function (e) {
+		// 		console.log(e);
+		// 		$('.birevim-loader').fadeOut(200);
+		// 		swal("Hata", "Bağlantı hatası! Lütfen tekrar deneyin.", "error");
+		// 	});
 
 	});
 
@@ -76,23 +118,6 @@ var _securityCode = "";
 		if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
 			return false;
 		}
-	});
-
-	var _birimler, _subeler;
-
-
-	$.getJSON("birimler.json", function (sonuc) {
-		_birimler = sonuc
-		_birimler.sort(function (a, b) {
-			return a.birim_ad.localeCompare(b.birim_ad);
-		});
-	});
-
-	$.getJSON("subeler.json", function (sonuc) {
-		_subeler = sonuc
-		_subeler.sort(function (a, b) {
-			return a.sube_ad.localeCompare(b.sube_ad);
-		});
 	});
 
 	$("#workSpace").on("change", function () {
