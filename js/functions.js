@@ -24,6 +24,44 @@ var _securityCode = "";
 		});
 	});
 
+	var storedValues = JSON.parse(localStorage.getItem("formValues"));
+	var _depVal = "";
+	_emailAddress = localStorage.getItem("userEmail");
+
+	if ((storedValues != null) && (_emailAddress!=null)) {
+		$(".content-left").animate({ height: 0, opacity: 0 }, 'slow', function () {
+
+			$(".content-right").fadeIn(400);
+
+			storedValues.forEach(function (item, index) {
+				if (index === 1) {
+					_depVal = item.value;
+				}
+				if (index < 4) {
+					$('select[name="' + item.name + '"]').next().find('[data-value="' + item.value + '"]').trigger('click');
+				} else {
+					$('input[name="' + item.name + '"][value="' + item.value + '"]').attr('checked', true);
+				}
+			});
+
+			setTimeout(() => {
+				$('select[name="departments"]').next().find('[data-value="' + _depVal + '"]').trigger('click');
+				$('#bottom-wizard').trigger('click');
+			}, 300);
+
+			setTimeout(() => {
+				for (let index = 0; index < storedValues.length; index++) {
+					$('.forward').trigger('click');
+				}
+			}, 1000);
+
+		});
+
+		$('.birevim-loader').delay(2000).fadeOut('slow');
+	}else{
+		$('.birevim-loader').delay(400).fadeOut('slow');
+	}
+
 	$(".btnStart").click(function () {
 
 		_securityCode = $.trim($("#securityCode").val());
@@ -41,70 +79,46 @@ var _securityCode = "";
 			return false;
 		}
 
-		$(".content-left").animate({ height: 0, opacity: 0 }, 'slow', function () {
-			$(".content-right").fadeIn(400);
-		});
+		$.ajax({
+			type: 'POST',
+			url: 'check.php',
+			dataType: "json",
+			data: { securityCode: _securityCode }
+		})
+			.done(function (data) {
+				console.log(data);
+				if (data.status === "ok") {
+					$('.birevim-loader').fadeOut(1000);
 
-		var storedValues = JSON.parse(localStorage.getItem("formValues"));
+					if (data.result.answers != null) {
+						swal({
+							title: 'Katılımınız için teşekkür ederiz',
+							icon: 'warning'
+						});
+					} else {
+						localStorage.setItem("userEmail", data.result.emailAddress);
+						$(".content-left").animate({ height: 0, opacity: 0 }, 'slow', function () {
+							$(".content-right").fadeIn(400);
+						});
+					}
+					_emailAddress = data.result.emailAddress;
 
-		var _depVal = "";
+					return false;
 
-		if ((storedValues != null)) {
-			storedValues.forEach(function (item, index) {
-				if (index === 1) {
-					_depVal = item.value;
-				}
-				if (index < 4) {
-					$('select[name="' + item.name + '"]').next().find('[data-value="' + item.value + '"]').trigger('click');
 				} else {
-					$("input[name='" + item.name + "'][value=" + item.value + "]").attr('checked', 'checked');
+					$('.birevim-loader').fadeOut(1000);
+					swal({
+						title: data.result,
+						icon: 'warning'
+					});
+					console.log(data);
 				}
+			})
+			.fail(function (e) {
+				console.log(e);
+				$('.birevim-loader').fadeOut(200);
+				swal("Hata", "Bağlantı hatası! Lütfen tekrar deneyin.", "error");
 			});
-		}
-
-		debugger;
-		console.log($('select[name="departments"]').next().find('[data-value="' + _depVal + '"]'));
-		$('select[name="departments"]').next().find('[data-value="' + _depVal + '"]').trigger('click');
-
-		// $.ajax({
-		// 	type: 'POST',
-		// 	url: 'check.php',
-		// 	dataType: "json",
-		// 	data: { securityCode: _securityCode }
-		// })
-		// 	.done(function (data) {
-		// 		console.log(data);
-		// 		if (data.status === "ok") {
-		// 			$('.birevim-loader').fadeOut(1000);
-
-		// 			if (data.result.answers != null) {
-		// 				swal({
-		// 					title: 'Katılımınız için teşekkür ederiz',
-		// 					icon: 'warning'
-		// 				});
-		// 			} else {
-		// 				$(".content-left").animate({ height: 0, opacity: 0 }, 'slow', function () {
-		// 					$(".content-right").fadeIn(400);
-		// 				});
-		// 			}
-		// 			_emailAddress = data.result.emailAddress;
-
-		// 			return false;
-
-		// 		} else {
-		// 			$('.birevim-loader').fadeOut(1000);
-		// 			swal({
-		// 				title: data.result,
-		// 				icon: 'warning'
-		// 			});
-		// 			console.log(data);
-		// 		}
-		// 	})
-		// 	.fail(function (e) {
-		// 		console.log(e);
-		// 		$('.birevim-loader').fadeOut(200);
-		// 		swal("Hata", "Bağlantı hatası! Lütfen tekrar deneyin.", "error");
-		// 	});
 
 	});
 
@@ -262,7 +276,6 @@ var _securityCode = "";
 	$(window).on('load', function () { // makes sure the whole site is loaded
 		$('[data-loader="circle-side"]').fadeOut(); // will first fade out the loading animation
 		// $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
-		$('.birevim-loader').delay(800).fadeOut('slow');
 		$('body').delay(350).css({
 			'overflow': 'visible'
 		});
@@ -292,7 +305,10 @@ var _securityCode = "";
 							title: 'Anket sonucunuz kaydedildi!',
 							icon: 'success'
 						}).then(function () {
-							location.reload();
+							localStorage.clear();
+							setTimeout(() => {
+								location.reload();
+							}, 800);
 						});
 					} else {
 						$('.birevim-loader').fadeOut(1000);
