@@ -302,7 +302,7 @@ var _securityCode = "";
 					if (data.status === "ok") {
 						$('.birevim-loader').fadeOut(1000);
 						swal({
-							title: 'Anket sonucunuz kaydedildi!',
+							title: 'Katılımınız için teşekkür ederiz.',
 							icon: 'success'
 						}).then(function () {
 							localStorage.clear();
