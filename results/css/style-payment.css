@@ -256,3 +256,35 @@ img {
 .table-responsive {
   margin-top: 50px !important;
 }
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  padding: 5% !important;
+  visibility: hidden;
+  width: 150px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 90%;
+  left: -78%;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.tooltip{
+  opacity:1 !important;
+  color: #53c125;
+  display: revert !important;
+  cursor: pointer;
+ }
