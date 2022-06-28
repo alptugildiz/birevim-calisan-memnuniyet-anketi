@@ -437,7 +437,7 @@ a.btn_1.rounded, .btn_1.rounded {
   }
 }
 
-@media (min-height: 700px) and (max-height: 820px) {
+@media (min-height: 550px) and (max-height: 820px) {
   h3.main_question {
     margin: 0 0 6px 0 !important;
     font-size: 0.8rem !important;
